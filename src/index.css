@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-size: 12px;
+  --primary-color: #c5c7cb;
+  --secondary-color: #8f959f;
+  --active-background-color: #0369a1;
+  --highlight-background-color: #323236;
+  --border-color: #47474c;
+  --background-color: #27272a;
+  --success-color: #98c379;
+  --danger-color: #e06c75;
+  --alert-color: #e5c07b;
+  --info-color: #61afef;
+}
+
+body {
+  @apply text-base;
+  @apply leading-6;
+  @apply bg-background;
+  @apply text-primary;
+  @apply font-mono;
+}

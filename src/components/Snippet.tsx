@@ -58,7 +58,7 @@ export default function Snippet({ entry }: CodeProps) {
         </div>
       </div>
       <div className="flex-1">
-        <Editor value={snippet} />
+        <Editor value={snippet} langauge={selectedGenerator.language}/>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import { DuplicateIcon } from "./icons";
 import { Generator, HAREntry } from "../types";
 import generators from "../generators";
 import Editor from "./Editor";
+import copy from "copy-to-clipboard";
 
 type CodeProps = {
   entry: HAREntry | null;
@@ -22,9 +23,15 @@ export default function Snippet({ entry }: CodeProps) {
 
     return selectedGenerator.parse(entry);
   }, [selectedGenerator, entry]);
-  
+
   const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedGenerator(generators[e.target.value]);
+  };
+
+  const handleCopy = () => {
+    if (snippet) {
+      copy(snippet);
+    }
   };
 
   return (
@@ -39,10 +46,15 @@ export default function Snippet({ entry }: CodeProps) {
             onChange={handleSelect}
           >
             {Object.entries(generators).map(([key, gen]) => (
-              <option key={key} value={key}>{gen.displayName}</option>
+              <option key={key} value={key}>
+                {gen.displayName}
+              </option>
             ))}
           </select>
-          <DuplicateIcon />
+          <DuplicateIcon
+            onClick={handleCopy}
+            className={!snippet ? "opacity-50 cursor-not-allowed": ""}
+          />
         </div>
       </div>
       <div className="flex-1">

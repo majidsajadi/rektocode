@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from "uuid";
 import { HAREntry } from "../types";
 
 type EntryListProps = {
@@ -10,6 +11,7 @@ export default function EntryList({ entries, onClick }: EntryListProps) {
     <ul>
       {entries.map((entry) => (
         <li
+          key={uuidv4()}
           onClick={() => onClick(entry)}
           className="p-1 cursor-pointer odd:bg-highlight-background hover:bg-active-background group"
         >

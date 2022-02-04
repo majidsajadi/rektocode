@@ -1,6 +1,9 @@
 import CodeMirror, { EditorView } from "@uiw/react-codemirror";
-import { javascript } from "@codemirror/lang-javascript";
 import { oneDark } from "@codemirror/theme-one-dark";
+
+import { javascript } from "@codemirror/lang-javascript";
+import {shell} from "@codemirror/legacy-modes/mode/shell"
+
 import theme from "../utils/theme";
 
 type EditorProps = {

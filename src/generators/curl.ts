@@ -1,8 +1,8 @@
-import { HAREntry } from "../types";
+import { ELanguages, Generator, HAREntry } from "../types";
 
 // TODO: http version
 // TODO: curl options: multi line, quote type, long form options
-export default function toCurl(entry: HAREntry) {
+function parse(entry: HAREntry) {
   const ignoredHeaders = new Set<string>([
     "host",
     "method",
@@ -31,3 +31,9 @@ export default function toCurl(entry: HAREntry) {
 
   return snippet;
 }
+
+export default {
+  displayName: "Curl",
+  language: ELanguages.Shell,
+  parse,
+} as Generator;

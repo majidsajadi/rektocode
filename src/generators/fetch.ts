@@ -1,8 +1,8 @@
-import { HAREntry } from "../types";
+import { ELanguages, Generator, HAREntry } from "../types";
 
 // TODO: http version, credential, referrer, cors mode
 // TODO: fetch options: indent
-export default function toCurl(entry: HAREntry) {
+function parse(entry: HAREntry) {
   const ignoredHeaders = new Set<string>([
     "host",
     "method",
@@ -58,3 +58,10 @@ export default function toCurl(entry: HAREntry) {
   const options = JSON.stringify(fetchOptions, null, 2);
   return `fetch("${entry.request.url}", ${options});`;
 }
+
+
+export default {
+  displayName: "Fetch",
+  language: ELanguages.JavaScript,
+  parse,
+} as Generator;

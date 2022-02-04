@@ -15,10 +15,6 @@ export default function Snippet({ entry }: CodeProps) {
     generators[DEFAULT_GENERATOR]
   );
 
-  const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedGenerator(generators[e.target.value]);
-  };
-
   const snippet = useMemo(() => {
     if (!entry) {
       return;
@@ -26,6 +22,10 @@ export default function Snippet({ entry }: CodeProps) {
 
     return selectedGenerator.parse(entry);
   }, [selectedGenerator, entry]);
+  
+  const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedGenerator(generators[e.target.value]);
+  };
 
   return (
     <div className="flex flex-col">

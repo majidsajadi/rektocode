@@ -1,8 +1,9 @@
 import classNames from "classnames";
 
-type DuplicateIconProps = { className?: string };
-
-export function DuplicateIcon({ className }: DuplicateIconProps) {
+export function DuplicateIcon({
+  className,
+  ...rest
+}: React.SVGProps<SVGSVGElement>) {
   const duplicateIconCLS = classNames(
     "h-5 w-5 cursor-pointer hover:text-white",
     className
@@ -15,6 +16,7 @@ export function DuplicateIcon({ className }: DuplicateIconProps) {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
+      {...rest}
     >
       <path
         strokeLinecap="round"

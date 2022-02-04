@@ -1,8 +1,9 @@
 import classNames from "classnames";
 
-type CogIconProps = { className?: string };
-
-export function CogIcon({ className }: CogIconProps) {
+export function CogIcon({
+  className,
+  ...rest
+}: React.SVGProps<SVGSVGElement>) {
   const cogIconCLS = classNames(
     "h-5 w-5 cursor-pointer hover:text-white",
     className
@@ -15,6 +16,7 @@ export function CogIcon({ className }: CogIconProps) {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
+      {...rest}
     >
       <path
         strokeLinecap="round"

@@ -1,8 +1,9 @@
 import classNames from "classnames";
 
-type BanIconProps = { className?: string };
-
-export function BanIcon({ className }: BanIconProps) {
+export function BanIcon({
+  className,
+  ...rest
+}: React.SVGProps<SVGSVGElement>) {
   const banIconCLS = classNames(
     "h-5 w-5 cursor-pointer hover:text-white",
     className
@@ -15,6 +16,7 @@ export function BanIcon({ className }: BanIconProps) {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
+      {...rest}
     >
       <path
         strokeLinecap="round"

@@ -1,6 +1,6 @@
 import { ELanguages, Generator, HAREntry } from "../types";
 
-// TODO: http version, credential, referrer, cors mode
+// TODO: http version, credential, referrer, cors mode, basic auth, form data
 // TODO: fetch options: indent
 function parse(entry: HAREntry) {
   const ignoredHeaders = new Set<string>([

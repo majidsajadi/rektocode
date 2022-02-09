@@ -5,10 +5,11 @@ import Snippet from "./Snippet";
 import Enteries from "./Enteries";
 
 // TODO: failed requests
+// TODO: colorize code
 // TODO: trim request. get only path
 // TODO: focus editor
 // TODO: sort tailwind header
-
+// TODO: clear snippet on handleClear
 function App() {
   const [selected, setSelected] = useState<HAREntry | null>(null);
 

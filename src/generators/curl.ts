@@ -1,6 +1,6 @@
 import { ELanguages, Generator, HAREntry } from "../types";
 
-// TODO: http version
+// TODO: http version, formdata, basic auth
 // TODO: curl options: multi line, quote type, long form options
 function parse(entry: HAREntry) {
   const ignoredHeaders = new Set<string>([
@@ -25,7 +25,7 @@ function parse(entry: HAREntry) {
     }
   });
 
-  if (entry.request.postData) {
+  if (entry.request.postData?.text) {
     snippet += `\t--data-raw '${entry.request.postData.text}'`;
   }
 

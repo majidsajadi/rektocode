@@ -6,7 +6,7 @@ import EntryList from "./EntryList";
 import { BanIcon } from "./icons";
 
 type EnteriesProps = {
-  onSelect: (entry: HAREntry) => void;
+  onSelect: (entry: HAREntry | null) => void;
 };
 
 export default function Enteries({ onSelect }: EnteriesProps) {
@@ -26,6 +26,7 @@ export default function Enteries({ onSelect }: EnteriesProps) {
   const handleClear = () => {
     setEntries([]);
     setFilter(undefined);
+    onSelect(null);
   };
 
   const filtered = useMemo(() => {

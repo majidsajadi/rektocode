@@ -4,8 +4,6 @@ import { HAREntry } from "../types";
 import Snippet from "./Snippet";
 import Enteries from "./Enteries";
 
-// TODO: failed requests
-// TODO: colorize code
 // TODO: trim request. get only path
 // TODO: focus editor
 // TODO: sort tailwind header

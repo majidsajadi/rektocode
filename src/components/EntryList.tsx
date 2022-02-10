@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { v4 as uuidv4 } from "uuid";
 import { HAREntry } from "../types";
 
@@ -7,6 +8,19 @@ type EntryListProps = {
 };
 
 export default function EntryList({ entries, onClick }: EntryListProps) {
+  const getMethodCLS = (status: number) => {
+    const base = "flex-none w-8";
+    let color = "text-success";
+
+    if (status > 400) {
+      color = "text-danger";
+    } else if (status >= 300 && status < 400) {
+      color = "text-alert";
+    }
+
+    return classNames(base, color);
+  };
+
   return (
     <ul>
       {entries.map((entry) => (
@@ -16,10 +30,10 @@ export default function EntryList({ entries, onClick }: EntryListProps) {
           className="p-1 cursor-pointer odd:bg-highlight-background hover:bg-active-background group"
         >
           <div className="flex space-x-4 items-center">
-            <span className="flex-none w-8 text-secondary group-hover:text-white">
+            <span className="flex-none w-14 text-secondary group-hover:text-white">
               {entry.request.method}
             </span>
-            <span className="text-success flex-none w-8">
+            <span className={getMethodCLS(entry.response.status)}>
               {entry.response.status}
             </span>
             <span className="flex-1 group-hover:text-white">

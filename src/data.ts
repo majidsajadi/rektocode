@@ -1,1059 +1,4862 @@
 export default [
   {
-    "_initiator": {
-      "type": "script",
-      "stack": {
-        "callFrames": [
+    _initiator: {
+      type: "script",
+      stack: {
+        callFrames: [
           {
-            "functionName": "",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 2903,
-            "columnNumber": 38
+            functionName: "handleGetRequest",
+            scriptId: "21",
+            url: "http://localhost:3000/src/App.jsx",
+            lineNumber: 8,
+            columnNumber: 4,
           },
           {
-            "functionName": "send",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 3129,
-            "columnNumber": 81475
+            functionName: "callCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5255,
+            columnNumber: 13,
           },
           {
-            "functionName": "ajax",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 3129,
-            "columnNumber": 77294
+            functionName: "invokeGuardedCallbackDev",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5304,
+            columnNumber: 15,
           },
           {
-            "functionName": "$.ajax",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 9347,
-            "columnNumber": 29
+            functionName: "invokeGuardedCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5366,
+            columnNumber: 30,
           },
           {
-            "functionName": "ajaxRequest",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 6059,
-            "columnNumber": 17
+            functionName: "invokeGuardedCallbackAndCatchFirstError",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5380,
+            columnNumber: 24,
           },
           {
-            "functionName": "ajaxGETRequestJSON",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 6026,
-            "columnNumber": 20
+            functionName: "executeDispatch",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9553,
+            columnNumber: 2,
           },
           {
-            "functionName": "initDKRecommendations",
-            "scriptId": "502",
-            "url": "https://www.digikala.com/static/merged/c16c6368.js",
-            "lineNumber": 67,
-            "columnNumber": 17
+            functionName: "processDispatchQueueItemsInOrder",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9585,
+            columnNumber: 6,
           },
           {
-            "functionName": "",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 8826,
-            "columnNumber": 23
+            functionName: "processDispatchQueue",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9598,
+            columnNumber: 4,
           },
           {
-            "functionName": "callListInTryCatch",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 8824,
-            "columnNumber": 20
+            functionName: "dispatchEventsForPlugins",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9609,
+            columnNumber: 2,
           },
           {
-            "functionName": "init",
-            "scriptId": "502",
-            "url": "https://www.digikala.com/static/merged/c16c6368.js",
-            "lineNumber": 25,
-            "columnNumber": 17
+            functionName: "",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9817,
+            columnNumber: 11,
           },
           {
-            "functionName": "",
-            "scriptId": "502",
-            "url": "https://www.digikala.com/static/merged/c16c6368.js",
-            "lineNumber": 876,
-            "columnNumber": 16
+            functionName: "batchedEventUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23692,
+            columnNumber: 11,
           },
           {
-            "functionName": "e",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 3129,
-            "columnNumber": 29452
+            functionName: "batchedEventUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5055,
+            columnNumber: 11,
           },
           {
-            "functionName": "t",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 3129,
-            "columnNumber": 29754
+            functionName: "dispatchEventForPluginEventSystem",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9816,
+            columnNumber: 2,
           },
           {
-            "functionName": "sentryWrapped",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 2354,
-            "columnNumber": 72
-          }
+            functionName: "attemptToDispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7315,
+            columnNumber: 2,
+          },
+          {
+            functionName: "dispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7234,
+            columnNumber: 18,
+          },
+          {
+            functionName: "unstable_runWithPriority",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 462,
+            columnNumber: 11,
+          },
+          {
+            functionName: "runWithPriority$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 12583,
+            columnNumber: 9,
+          },
+          {
+            functionName: "discreteUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23709,
+            columnNumber: 13,
+          },
+          {
+            functionName: "discreteUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5066,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchDiscreteEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7199,
+            columnNumber: 2,
+          },
         ],
-        "parent": {
-          "description": "setTimeout",
-          "callFrames": [
-            {
-              "functionName": "",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 2549,
-              "columnNumber": 22
-            },
-            {
-              "functionName": "",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 3129,
-              "columnNumber": 29963
-            },
-            {
-              "functionName": "c",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 3129,
-              "columnNumber": 27741
-            },
-            {
-              "functionName": "fireWith",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 3129,
-              "columnNumber": 28486
-            },
-            {
-              "functionName": "fire",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 3129,
-              "columnNumber": 28522
-            },
-            {
-              "functionName": "c",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 3129,
-              "columnNumber": 27741
-            },
-            {
-              "functionName": "fireWith",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 3129,
-              "columnNumber": 28486
-            },
-            {
-              "functionName": "ready",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 3129,
-              "columnNumber": 31459
-            },
-            {
-              "functionName": "B",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 3129,
-              "columnNumber": 31238
-            }
-          ]
-        }
-      }
-    },
-    "_priority": "High",
-    "_resourceType": "xhr",
-    "cache": {},
-    "connection": "127378",
-    "pageref": "page_1",
-    "request": {
-      "method": "GET",
-      "url": "https://www.digikala.com/recommendation/v1/",
-      "httpVersion": "http/2.0",
-      "headers": [
-        {
-          "name": ":method",
-          "value": "GET"
-        },
-        {
-          "name": ":authority",
-          "value": "www.digikala.com"
-        },
-        {
-          "name": ":scheme",
-          "value": "https"
-        },
-        {
-          "name": ":path",
-          "value": "/recommendation/v1/"
-        },
-        {
-          "name": "sec-ch-ua",
-          "value": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"97\", \"Chromium\";v=\"97\""
-        },
-        {
-          "name": "accept",
-          "value": "*/*"
-        },
-        {
-          "name": "content-type",
-          "value": "application/x-www-form-urlencoded; charset=UTF-8"
-        },
-        {
-          "name": "x-requested-with",
-          "value": "XMLHttpRequest"
-        },
-        {
-          "name": "sec-ch-ua-mobile",
-          "value": "?0"
-        },
-        {
-          "name": "user-agent",
-          "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"
-        },
-        {
-          "name": "sec-ch-ua-platform",
-          "value": "\"Windows\""
-        },
-        {
-          "name": "sec-fetch-site",
-          "value": "same-origin"
-        },
-        {
-          "name": "sec-fetch-mode",
-          "value": "cors"
-        },
-        {
-          "name": "sec-fetch-dest",
-          "value": "empty"
-        },
-        {
-          "name": "referer",
-          "value": "https://www.digikala.com/"
-        },
-        {
-          "name": "accept-encoding",
-          "value": "gzip, deflate, br"
-        },
-        {
-          "name": "accept-language",
-          "value": "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5"
-        },
-        {
-          "name": "cookie",
-          "value": "tracker_global=4DCqiuU9; __auc=5d6061a917c5f5435ca82b38c53; _conv_r=s%3Awww.google.com*m%3Aorganic*t%3A*c%3A; _uid_=b979f9cb9f0aac0871e5a4f4b233a88a; recent_products=%5B5284148%2C6351381%5D; _gid=GA1.2.1582471505.1643905944; tracker_session=4Fq87WJv; TS011a822c=01023105919cde03aa5e0fff934b3fba3f3bad3c062e41df80d519d1135de3df789394f4d399e668876c6ee6af27bf00619193bfafb8d2f0895f546a2ba70581ecb5e2cf4acd9e640d4ec40a788cb072b57393c707; __asc=820ce86117ec1503582de014c97; sn_tracker_campaign={\"u_medium\":\"Direct\",\"u_source\":\"Direct\",\"u_campaign\":\"Direct\",\"u_term\":\"Direct\",\"u_content\":\"Direct\"}; PHPSESSID=cv8adjdh4div9jbsan7m18f6ek5f3pi73bg8h4a9h2tsclpevte2s956isr2gf4n; _conv_v=vi%3A1*sc%3A8*cs%3A1643920773*fs%3A1633686929*pv%3A24*exp%3A%7B100025412.%7Bv.1000186280-g.%7B100022024.1-100022025.1-100022445.1%7D%7D-100026246.%7Bv.1000188724-g.%7B100022024.1%7D%7D%7D*ps%3A1643905940; _conv_s=si%3A8*sh%3A1643920773136-0.9314386253960365*pv%3A1; _gat_UA-13212406-1=1; _ga_4S04WR965Q=GS1.1.1643920769.9.1.1643920869.0; _ga_LR50FG4ELJ=GS1.1.1643920769.9.1.1643920870.59; _ga=GA1.2.625835547.1633686928"
-        }
-      ],
-      "queryString": [],
-      "cookies": [
-        {
-          "name": "tracker_global",
-          "value": "4DCqiuU9",
-          "path": "/",
-          "domain": "www.digikala.com",
-          "expires": "2027-01-08T20:41:10.640Z",
-          "httpOnly": true,
-          "secure": true,
-          "sameSite": "None"
-        },
-        {
-          "name": "__auc",
-          "value": "5d6061a917c5f5435ca82b38c53",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2023-02-04T20:41:09.000Z",
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_conv_r",
-          "value": "s%3Awww.google.com*m%3Aorganic*t%3A*c%3A",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2022-08-02T20:40:11.000Z",
-          "httpOnly": false,
-          "secure": false,
-          "sameSite": "Lax"
-        },
-        {
-          "name": "_uid_",
-          "value": "b979f9cb9f0aac0871e5a4f4b233a88a",
-          "path": "/",
-          "domain": "www.digikala.com",
-          "expires": "2022-02-28T08:11:22.048Z",
-          "httpOnly": true,
-          "secure": true,
-          "sameSite": "Lax"
-        },
-        {
-          "name": "recent_products",
-          "value": "%5B5284148%2C6351381%5D",
-          "path": "/",
-          "domain": "www.digikala.com",
-          "expires": "2022-08-02T12:32:42.805Z",
-          "httpOnly": true,
-          "secure": true,
-          "sameSite": "Lax"
-        },
-        {
-          "name": "_gid",
-          "value": "GA1.2.1582471505.1643905944",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2022-02-04T20:41:10.000Z",
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "tracker_session",
-          "value": "4Fq87WJv",
-          "path": "/",
-          "domain": "www.digikala.com",
-          "expires": "2022-02-03T21:11:10.640Z",
-          "httpOnly": true,
-          "secure": true,
-          "sameSite": "None"
-        },
-        {
-          "name": "TS011a822c",
-          "value": "01023105919cde03aa5e0fff934b3fba3f3bad3c062e41df80d519d1135de3df789394f4d399e668876c6ee6af27bf00619193bfafb8d2f0895f546a2ba70581ecb5e2cf4acd9e640d4ec40a788cb072b57393c707",
-          "path": "/",
-          "domain": ".www.digikala.com",
-          "expires": "1969-12-31T23:59:59.000Z",
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "__asc",
-          "value": "820ce86117ec1503582de014c97",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2022-02-03T21:11:09.000Z",
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "sn_tracker_campaign",
-          "value": "{\"u_medium\":\"Direct\",\"u_source\":\"Direct\",\"u_campaign\":\"Direct\",\"u_term\":\"Direct\",\"u_content\":\"Direct\"}",
-          "path": "/",
-          "domain": "www.digikala.com",
-          "expires": "1969-12-31T23:59:59.000Z",
-          "httpOnly": false,
-          "secure": true,
-          "sameSite": "Lax"
-        },
-        {
-          "name": "PHPSESSID",
-          "value": "cv8adjdh4div9jbsan7m18f6ek5f3pi73bg8h4a9h2tsclpevte2s956isr2gf4n",
-          "path": "/",
-          "domain": "www.digikala.com",
-          "expires": "1969-12-31T23:59:59.000Z",
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_conv_v",
-          "value": "vi%3A1*sc%3A8*cs%3A1643920773*fs%3A1633686929*pv%3A24*exp%3A%7B100025412.%7Bv.1000186280-g.%7B100022024.1-100022025.1-100022445.1%7D%7D-100026246.%7Bv.1000188724-g.%7B100022024.1%7D%7D%7D*ps%3A1643905940",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2022-08-05T08:40:11.000Z",
-          "httpOnly": false,
-          "secure": false,
-          "sameSite": "Lax"
-        },
-        {
-          "name": "_conv_s",
-          "value": "si%3A8*sh%3A1643920773136-0.9314386253960365*pv%3A1",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2022-02-03T21:00:11.000Z",
-          "httpOnly": false,
-          "secure": false,
-          "sameSite": "Lax"
-        },
-        {
-          "name": "_gat_UA-13212406-1",
-          "value": "1",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2022-02-03T20:42:10.000Z",
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_ga_4S04WR965Q",
-          "value": "GS1.1.1643920769.9.1.1643920869.0",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2024-02-03T20:41:10.000Z",
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_ga_LR50FG4ELJ",
-          "value": "GS1.1.1643920769.9.1.1643920870.59",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2024-02-03T20:41:10.000Z",
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_ga",
-          "value": "GA1.2.625835547.1633686928",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2024-02-03T20:41:10.000Z",
-          "httpOnly": false,
-          "secure": false
-        }
-      ],
-      "headersSize": -1,
-      "bodySize": 0
-    },
-    "response": {
-      "status": 200,
-      "statusText": "",
-      "httpVersion": "http/2.0",
-      "headers": [
-        {
-          "name": "server",
-          "value": "DigiCDN Edge"
-        },
-        {
-          "name": "date",
-          "value": "Thu, 03 Feb 2022 20:41:10 GMT"
-        },
-        {
-          "name": "content-type",
-          "value": "application/json"
-        },
-        {
-          "name": "vary",
-          "value": "Accept-Encoding"
-        },
-        {
-          "name": "cache-control",
-          "value": "max-age=0"
-        },
-        {
-          "name": "set-cookie",
-          "value": "tracker_global=4DCqiuU9; expires=Fri, 08-Jan-2027 20:41:09 GMT; Max-Age=155520000; path=/; secure; httponly; samesite=none"
-        },
-        {
-          "name": "set-cookie",
-          "value": "tracker_session=4Fq87WJv; expires=Thu, 03-Feb-2022 21:11:09 GMT; Max-Age=1800; path=/; secure; httponly; samesite=none"
-        },
-        {
-          "name": "set-cookie",
-          "value": "TS011a822c=01023105919cde03aa5e0fff934b3fba3f3bad3c062e41df80d519d1135de3df789394f4d399e668876c6ee6af27bf00619193bfafb8d2f0895f546a2ba70581ecb5e2cf4acd9e640d4ec40a788cb072b57393c707; Path=/; Domain=.www.digikala.com"
-        },
-        {
-          "name": "content-encoding",
-          "value": "gzip"
-        },
-        {
-          "name": "x-app-server",
-          "value": "Desktop-B/Desktop-B82"
-        },
-        {
-          "name": "referrer-policy",
-          "value": "origin-when-cross-origin"
-        },
-        {
-          "name": "x-edge-server",
-          "value": "SN-Desktop/Desktop-7-167"
-        },
-        {
-          "name": "expires",
-          "value": "Thu, 03 Feb 2022 20:41:10 GMT"
-        },
-        {
-          "name": "cdn-request-time",
-          "value": "0.135"
-        },
-        {
-          "name": "cdn-host",
-          "value": "ir-fan-e02"
-        }
-      ],
-      "cookies": [
-        {
-          "name": "tracker_global",
-          "value": "4DCqiuU9",
-          "path": "/",
-          "domain": "www.digikala.com",
-          "expires": "2027-01-08T20:41:11.213Z",
-          "httpOnly": true,
-          "secure": true,
-          "sameSite": "none"
-        },
-        {
-          "name": "tracker_session",
-          "value": "4Fq87WJv",
-          "path": "/",
-          "domain": "www.digikala.com",
-          "expires": "2022-02-03T21:11:11.213Z",
-          "httpOnly": true,
-          "secure": true,
-          "sameSite": "none"
-        },
-        {
-          "name": "TS011a822c",
-          "value": "01023105919cde03aa5e0fff934b3fba3f3bad3c062e41df80d519d1135de3df789394f4d399e668876c6ee6af27bf00619193bfafb8d2f0895f546a2ba70581ecb5e2cf4acd9e640d4ec40a788cb072b57393c707",
-          "path": "/",
-          "domain": ".www.digikala.com",
-          "expires": null,
-          "httpOnly": false,
-          "secure": false
-        }
-      ],
-      "content": {
-        "size": 1213853,
-        "mimeType": "application/json"
       },
-      "redirectURL": "",
-      "headersSize": -1,
-      "bodySize": -1,
-      "_transferSize": 79625,
-      "_error": null
     },
-    "serverIPAddress": "185.20.160.11",
-    "startedDateTime": "2022-02-03T20:41:11.212Z",
-    "time": 1804.0920000057667,
-    "timings": {
-      "blocked": 2.007999990351498,
-      "dns": -1,
-      "ssl": -1,
-      "connect": -1,
-      "send": 0.281,
-      "wait": 917.9329999957457,
-      "receive": 883.8700000196695,
-      "_blocked_queueing": 1.3899999903514981
-    }
+    _priority: "High",
+    _resourceType: "fetch",
+    cache: {},
+    connection: "9153",
+    request: {
+      method: "GET",
+      url: "http://localhost:3001/",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "sec-ch-ua",
+          value:
+            '" Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
+        },
+        {
+          name: "sec-ch-ua-mobile",
+          value: "?0",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "sec-ch-ua-platform",
+          value: '"macOS"',
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 624,
+      bodySize: 0,
+    },
+    response: {
+      status: 200,
+      statusText: "OK",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Content-Type",
+          value: "text/html; charset=utf-8",
+        },
+        {
+          name: "Content-Length",
+          value: "12",
+        },
+        {
+          name: "ETag",
+          value: 'W/"c-Lve95gjOVATpfV8EL5X4nxwjKHE"',
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:17 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 12,
+        mimeType: "text/html",
+        compression: 0,
+      },
+      redirectURL: "",
+      headersSize: 236,
+      bodySize: 12,
+      _transferSize: 248,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:17.837Z",
+    time: 10.771000003311784,
+    timings: {
+      blocked: 6.598000004121102,
+      dns: 0.01499999999999968,
+      ssl: -1,
+      connect: 0.532,
+      send: 0.23299999999999965,
+      wait: 2.721999997587875,
+      receive: 0.6710000016028062,
+      _blocked_queueing: 1.9250000041211024,
+    },
   },
   {
-    "_initiator": {
-      "type": "script",
-      "stack": {
-        "callFrames": [
+    _initiator: {
+      type: "script",
+      stack: {
+        callFrames: [
           {
-            "functionName": "",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 2903,
-            "columnNumber": 38
+            functionName: "handlePutRequest",
+            scriptId: "21",
+            url: "http://localhost:3000/src/App.jsx",
+            lineNumber: 15,
+            columnNumber: 4,
           },
           {
-            "functionName": "sendRequest",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 8229,
-            "columnNumber": 20
+            functionName: "callCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5255,
+            columnNumber: 13,
           },
           {
-            "functionName": "sendEvents",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 8244,
-            "columnNumber": 21
+            functionName: "invokeGuardedCallbackDev",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5304,
+            columnNumber: 15,
           },
           {
-            "functionName": "sendEvent",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 8207,
-            "columnNumber": 28
+            functionName: "invokeGuardedCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5366,
+            columnNumber: 30,
           },
           {
-            "functionName": "PageViewTracking",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 8046,
-            "columnNumber": 16
+            functionName: "invokeGuardedCallbackAndCatchFirstError",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5380,
+            columnNumber: 24,
           },
           {
-            "functionName": "init",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 8157,
-            "columnNumber": 37
+            functionName: "executeDispatch",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9553,
+            columnNumber: 2,
           },
           {
-            "functionName": "",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 8307,
-            "columnNumber": 14
+            functionName: "processDispatchQueueItemsInOrder",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9585,
+            columnNumber: 6,
           },
           {
-            "functionName": "e",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 3129,
-            "columnNumber": 29452
+            functionName: "processDispatchQueue",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9598,
+            columnNumber: 4,
           },
           {
-            "functionName": "t",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 3129,
-            "columnNumber": 29754
+            functionName: "dispatchEventsForPlugins",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9609,
+            columnNumber: 2,
           },
           {
-            "functionName": "sentryWrapped",
-            "scriptId": "501",
-            "url": "https://www.digikala.com/static/merged/58b16af7.js",
-            "lineNumber": 2354,
-            "columnNumber": 72
-          }
+            functionName: "",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9817,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23692,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5055,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchEventForPluginEventSystem",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9816,
+            columnNumber: 2,
+          },
+          {
+            functionName: "attemptToDispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7315,
+            columnNumber: 2,
+          },
+          {
+            functionName: "dispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7234,
+            columnNumber: 18,
+          },
+          {
+            functionName: "unstable_runWithPriority",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 462,
+            columnNumber: 11,
+          },
+          {
+            functionName: "runWithPriority$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 12583,
+            columnNumber: 9,
+          },
+          {
+            functionName: "discreteUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23709,
+            columnNumber: 13,
+          },
+          {
+            functionName: "discreteUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5066,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchDiscreteEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7199,
+            columnNumber: 2,
+          },
         ],
-        "parent": {
-          "description": "setTimeout",
-          "callFrames": [
-            {
-              "functionName": "",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 2549,
-              "columnNumber": 22
-            },
-            {
-              "functionName": "",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 3129,
-              "columnNumber": 29963
-            },
-            {
-              "functionName": "c",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 3129,
-              "columnNumber": 27741
-            },
-            {
-              "functionName": "fireWith",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 3129,
-              "columnNumber": 28486
-            },
-            {
-              "functionName": "fire",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 3129,
-              "columnNumber": 28522
-            },
-            {
-              "functionName": "c",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 3129,
-              "columnNumber": 27741
-            },
-            {
-              "functionName": "fireWith",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 3129,
-              "columnNumber": 28486
-            },
-            {
-              "functionName": "ready",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 3129,
-              "columnNumber": 31459
-            },
-            {
-              "functionName": "B",
-              "scriptId": "501",
-              "url": "https://www.digikala.com/static/merged/58b16af7.js",
-              "lineNumber": 3129,
-              "columnNumber": 31238
-            }
-          ]
-        }
-      }
-    },
-    "_priority": "High",
-    "_resourceType": "xhr",
-    "cache": {},
-    "connection": "127378",
-    "pageref": "page_1",
-    "request": {
-      "method": "POST",
-      "url": "https://www.digikala.com/tracker/events/",
-      "httpVersion": "http/2.0",
-      "headers": [
-        {
-          "name": ":method",
-          "value": "POST"
-        },
-        {
-          "name": ":authority",
-          "value": "www.digikala.com"
-        },
-        {
-          "name": ":scheme",
-          "value": "https"
-        },
-        {
-          "name": ":path",
-          "value": "/tracker/events/"
-        },
-        {
-          "name": "content-length",
-          "value": "335"
-        },
-        {
-          "name": "sec-ch-ua",
-          "value": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"97\", \"Chromium\";v=\"97\""
-        },
-        {
-          "name": "sec-ch-ua-mobile",
-          "value": "?0"
-        },
-        {
-          "name": "user-agent",
-          "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"
-        },
-        {
-          "name": "sec-ch-ua-platform",
-          "value": "\"Windows\""
-        },
-        {
-          "name": "content-type",
-          "value": "application/json;charset=UTF-8"
-        },
-        {
-          "name": "accept",
-          "value": "*/*"
-        },
-        {
-          "name": "origin",
-          "value": "https://www.digikala.com"
-        },
-        {
-          "name": "sec-fetch-site",
-          "value": "same-origin"
-        },
-        {
-          "name": "sec-fetch-mode",
-          "value": "cors"
-        },
-        {
-          "name": "sec-fetch-dest",
-          "value": "empty"
-        },
-        {
-          "name": "referer",
-          "value": "https://www.digikala.com/"
-        },
-        {
-          "name": "accept-encoding",
-          "value": "gzip, deflate, br"
-        },
-        {
-          "name": "accept-language",
-          "value": "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5"
-        },
-        {
-          "name": "cookie",
-          "value": "tracker_global=4DCqiuU9; __auc=5d6061a917c5f5435ca82b38c53; _conv_r=s%3Awww.google.com*m%3Aorganic*t%3A*c%3A; _uid_=b979f9cb9f0aac0871e5a4f4b233a88a; recent_products=%5B5284148%2C6351381%5D; _gid=GA1.2.1582471505.1643905944; tracker_session=4Fq87WJv; TS011a822c=01023105919cde03aa5e0fff934b3fba3f3bad3c062e41df80d519d1135de3df789394f4d399e668876c6ee6af27bf00619193bfafb8d2f0895f546a2ba70581ecb5e2cf4acd9e640d4ec40a788cb072b57393c707; __asc=820ce86117ec1503582de014c97; sn_tracker_campaign={\"u_medium\":\"Direct\",\"u_source\":\"Direct\",\"u_campaign\":\"Direct\",\"u_term\":\"Direct\",\"u_content\":\"Direct\"}; PHPSESSID=cv8adjdh4div9jbsan7m18f6ek5f3pi73bg8h4a9h2tsclpevte2s956isr2gf4n; _conv_v=vi%3A1*sc%3A8*cs%3A1643920773*fs%3A1633686929*pv%3A24*exp%3A%7B100025412.%7Bv.1000186280-g.%7B100022024.1-100022025.1-100022445.1%7D%7D-100026246.%7Bv.1000188724-g.%7B100022024.1%7D%7D%7D*ps%3A1643905940; _conv_s=si%3A8*sh%3A1643920773136-0.9314386253960365*pv%3A1; _gat_UA-13212406-1=1; _ga_4S04WR965Q=GS1.1.1643920769.9.1.1643920869.0; _ga_LR50FG4ELJ=GS1.1.1643920769.9.1.1643920870.59; _ga=GA1.2.625835547.1633686928"
-        }
-      ],
-      "queryString": [],
-      "cookies": [
-        {
-          "name": "tracker_global",
-          "value": "4DCqiuU9",
-          "path": "/",
-          "domain": "www.digikala.com",
-          "expires": "2027-01-08T20:41:09.194Z",
-          "httpOnly": true,
-          "secure": true,
-          "sameSite": "None"
-        },
-        {
-          "name": "__auc",
-          "value": "5d6061a917c5f5435ca82b38c53",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2023-02-04T20:41:09.000Z",
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_conv_r",
-          "value": "s%3Awww.google.com*m%3Aorganic*t%3A*c%3A",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2022-08-02T20:40:11.000Z",
-          "httpOnly": false,
-          "secure": false,
-          "sameSite": "Lax"
-        },
-        {
-          "name": "_uid_",
-          "value": "b979f9cb9f0aac0871e5a4f4b233a88a",
-          "path": "/",
-          "domain": "www.digikala.com",
-          "expires": "2022-02-28T08:11:22.048Z",
-          "httpOnly": true,
-          "secure": true,
-          "sameSite": "Lax"
-        },
-        {
-          "name": "recent_products",
-          "value": "%5B5284148%2C6351381%5D",
-          "path": "/",
-          "domain": "www.digikala.com",
-          "expires": "2022-08-02T12:32:42.805Z",
-          "httpOnly": true,
-          "secure": true,
-          "sameSite": "Lax"
-        },
-        {
-          "name": "_gid",
-          "value": "GA1.2.1582471505.1643905944",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2022-02-04T20:41:10.000Z",
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "tracker_session",
-          "value": "4Fq87WJv",
-          "path": "/",
-          "domain": "www.digikala.com",
-          "expires": "2022-02-03T21:11:09.194Z",
-          "httpOnly": true,
-          "secure": true,
-          "sameSite": "None"
-        },
-        {
-          "name": "TS011a822c",
-          "value": "01023105919cde03aa5e0fff934b3fba3f3bad3c062e41df80d519d1135de3df789394f4d399e668876c6ee6af27bf00619193bfafb8d2f0895f546a2ba70581ecb5e2cf4acd9e640d4ec40a788cb072b57393c707",
-          "path": "/",
-          "domain": ".www.digikala.com",
-          "expires": "1969-12-31T23:59:59.000Z",
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "__asc",
-          "value": "820ce86117ec1503582de014c97",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2022-02-03T21:11:09.000Z",
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "sn_tracker_campaign",
-          "value": "{\"u_medium\":\"Direct\",\"u_source\":\"Direct\",\"u_campaign\":\"Direct\",\"u_term\":\"Direct\",\"u_content\":\"Direct\"}",
-          "path": "/",
-          "domain": "www.digikala.com",
-          "expires": "1969-12-31T23:59:59.000Z",
-          "httpOnly": false,
-          "secure": true,
-          "sameSite": "Lax"
-        },
-        {
-          "name": "PHPSESSID",
-          "value": "cv8adjdh4div9jbsan7m18f6ek5f3pi73bg8h4a9h2tsclpevte2s956isr2gf4n",
-          "path": "/",
-          "domain": "www.digikala.com",
-          "expires": "1969-12-31T23:59:59.000Z",
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_conv_v",
-          "value": "vi%3A1*sc%3A8*cs%3A1643920773*fs%3A1633686929*pv%3A24*exp%3A%7B100025412.%7Bv.1000186280-g.%7B100022024.1-100022025.1-100022445.1%7D%7D-100026246.%7Bv.1000188724-g.%7B100022024.1%7D%7D%7D*ps%3A1643905940",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2022-08-05T08:40:11.000Z",
-          "httpOnly": false,
-          "secure": false,
-          "sameSite": "Lax"
-        },
-        {
-          "name": "_conv_s",
-          "value": "si%3A8*sh%3A1643920773136-0.9314386253960365*pv%3A1",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2022-02-03T21:00:11.000Z",
-          "httpOnly": false,
-          "secure": false,
-          "sameSite": "Lax"
-        },
-        {
-          "name": "_gat_UA-13212406-1",
-          "value": "1",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2022-02-03T20:42:10.000Z",
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_ga_4S04WR965Q",
-          "value": "GS1.1.1643920769.9.1.1643920869.0",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2024-02-03T20:41:10.000Z",
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_ga_LR50FG4ELJ",
-          "value": "GS1.1.1643920769.9.1.1643920870.59",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2024-02-03T20:41:10.000Z",
-          "httpOnly": false,
-          "secure": false
-        },
-        {
-          "name": "_ga",
-          "value": "GA1.2.625835547.1633686928",
-          "path": "/",
-          "domain": ".digikala.com",
-          "expires": "2024-02-03T20:41:10.000Z",
-          "httpOnly": false,
-          "secure": false
-        }
-      ],
-      "headersSize": -1,
-      "bodySize": 335,
-      "postData": {
-        "mimeType": "application/json;charset=UTF-8",
-        "text": "{\"events\":[{\"name\":\"dkPageView\",\"params\":{\"pv_referrer\":\"\",\"pv_page_address\":\"/\",\"pv_page_type\":\"home\",\"pv_bot\":false,\"pv_user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\",\"pv_query\":{}},\"time\":1643920870572,\"url\":\"https://www.digikala.com/\"}],\"version\":1}"
-      }
-    },
-    "response": {
-      "status": 200,
-      "statusText": "",
-      "httpVersion": "http/2.0",
-      "headers": [
-        {
-          "name": "server",
-          "value": "DigiCDN Edge"
-        },
-        {
-          "name": "date",
-          "value": "Thu, 03 Feb 2022 20:41:09 GMT"
-        },
-        {
-          "name": "content-type",
-          "value": "application/json"
-        },
-        {
-          "name": "vary",
-          "value": "Accept-Encoding"
-        },
-        {
-          "name": "cache-control",
-          "value": "max-age=0"
-        },
-        {
-          "name": "set-cookie",
-          "value": "tracker_global=4DCqiuU9; expires=Fri, 08-Jan-2027 20:41:08 GMT; Max-Age=155520000; path=/; secure; httponly; samesite=none"
-        },
-        {
-          "name": "set-cookie",
-          "value": "tracker_session=4Fq87WJv; expires=Thu, 03-Feb-2022 21:11:08 GMT; Max-Age=1800; path=/; secure; httponly; samesite=none"
-        },
-        {
-          "name": "content-encoding",
-          "value": "gzip"
-        },
-        {
-          "name": "x-app-server",
-          "value": "Desktop-B/Desktop-B224"
-        },
-        {
-          "name": "referrer-policy",
-          "value": "origin-when-cross-origin"
-        },
-        {
-          "name": "x-edge-server",
-          "value": "SN-Desktop/Desktop-150"
-        },
-        {
-          "name": "expires",
-          "value": "Thu, 03 Feb 2022 20:41:09 GMT"
-        },
-        {
-          "name": "cdn-request-time",
-          "value": "0.018"
-        },
-        {
-          "name": "cdn-host",
-          "value": "ir-fan-e02"
-        }
-      ],
-      "cookies": [
-        {
-          "name": "tracker_global",
-          "value": "4DCqiuU9",
-          "path": "/",
-          "domain": "www.digikala.com",
-          "expires": "2027-01-08T20:41:10.574Z",
-          "httpOnly": true,
-          "secure": true,
-          "sameSite": "none"
-        },
-        {
-          "name": "tracker_session",
-          "value": "4Fq87WJv",
-          "path": "/",
-          "domain": "www.digikala.com",
-          "expires": "2022-02-03T21:11:10.574Z",
-          "httpOnly": true,
-          "secure": true,
-          "sameSite": "none"
-        }
-      ],
-      "content": {
-        "size": 15,
-        "mimeType": "application/json"
       },
-      "redirectURL": "",
-      "headersSize": -1,
-      "bodySize": -1,
-      "_transferSize": 516,
-      "_error": null
     },
-    "serverIPAddress": "185.20.160.11",
-    "startedDateTime": "2022-02-03T20:41:10.573Z",
-    "time": 68.24399996548891,
-    "timings": {
-      "blocked": 1.8939999020397664,
-      "dns": -1,
-      "ssl": -1,
-      "connect": -1,
-      "send": 0.65,
-      "wait": 64.84000003424286,
-      "receive": 0.8600000292062759,
-      "_blocked_queueing": 1.5159999020397663
-    }
-  }
-]
+    _priority: "High",
+    _resourceType: "fetch",
+    cache: {},
+    connection: "9153",
+    request: {
+      method: "PUT",
+      url: "http://localhost:3001/put",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Content-Length",
+          value: "0",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "sec-ch-ua",
+          value:
+            '" Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
+        },
+        {
+          name: "sec-ch-ua-mobile",
+          value: "?0",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "sec-ch-ua-platform",
+          value: '"macOS"',
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 646,
+      bodySize: 0,
+    },
+    response: {
+      status: 200,
+      statusText: "OK",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Content-Type",
+          value: "text/html; charset=utf-8",
+        },
+        {
+          name: "Content-Length",
+          value: "3",
+        },
+        {
+          name: "ETag",
+          value: 'W/"3-CRsM5C6wvZYWnqALFt2Tj21jrJU"',
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:18 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 3,
+        mimeType: "text/html",
+        compression: 0,
+      },
+      redirectURL: "",
+      headersSize: 235,
+      bodySize: 3,
+      _transferSize: 238,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:18.405Z",
+    time: 13.470999998389743,
+    timings: {
+      blocked: 8.115999998223968,
+      dns: -1,
+      ssl: -1,
+      connect: -1,
+      send: 0.124,
+      wait: 4.45099999804236,
+      receive: 0.7800000021234155,
+      _blocked_queueing: 7.817999998223968,
+    },
+  },
+  {
+    _initiator: {
+      type: "preflight",
+      url: "http://localhost:3001/put",
+    },
+    _priority: "High",
+    _resourceType: "preflight",
+    cache: {},
+    connection: "9153",
+    request: {
+      method: "OPTIONS",
+      url: "http://localhost:3001/put",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Access-Control-Request-Method",
+          value: "PUT",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 539,
+      bodySize: 0,
+    },
+    response: {
+      status: 204,
+      statusText: "No Content",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Access-Control-Allow-Methods",
+          value: "GET,HEAD,PUT,PATCH,POST,DELETE",
+        },
+        {
+          name: "Vary",
+          value: "Access-Control-Request-Headers",
+        },
+        {
+          name: "Content-Length",
+          value: "0",
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:18 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 0,
+        mimeType: "x-unknown",
+        compression: 262,
+      },
+      redirectURL: "",
+      headersSize: 262,
+      bodySize: -262,
+      _transferSize: 0,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:18.422Z",
+    time: 4.534999997355044,
+    timings: {
+      blocked: -0.75,
+      dns: -1,
+      ssl: -1,
+      connect: -1,
+      send: 0.09999999999999998,
+      wait: 3.86700000151759,
+      receive: 0.5679999958374538,
+      _blocked_queueing: -1,
+    },
+  },
+  {
+    _initiator: {
+      type: "script",
+      stack: {
+        callFrames: [
+          {
+            functionName: "handlePatchRequest",
+            scriptId: "21",
+            url: "http://localhost:3000/src/App.jsx",
+            lineNumber: 29,
+            columnNumber: 4,
+          },
+          {
+            functionName: "callCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5255,
+            columnNumber: 13,
+          },
+          {
+            functionName: "invokeGuardedCallbackDev",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5304,
+            columnNumber: 15,
+          },
+          {
+            functionName: "invokeGuardedCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5366,
+            columnNumber: 30,
+          },
+          {
+            functionName: "invokeGuardedCallbackAndCatchFirstError",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5380,
+            columnNumber: 24,
+          },
+          {
+            functionName: "executeDispatch",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9553,
+            columnNumber: 2,
+          },
+          {
+            functionName: "processDispatchQueueItemsInOrder",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9585,
+            columnNumber: 6,
+          },
+          {
+            functionName: "processDispatchQueue",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9598,
+            columnNumber: 4,
+          },
+          {
+            functionName: "dispatchEventsForPlugins",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9609,
+            columnNumber: 2,
+          },
+          {
+            functionName: "",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9817,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23692,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5055,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchEventForPluginEventSystem",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9816,
+            columnNumber: 2,
+          },
+          {
+            functionName: "attemptToDispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7315,
+            columnNumber: 2,
+          },
+          {
+            functionName: "dispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7234,
+            columnNumber: 18,
+          },
+          {
+            functionName: "unstable_runWithPriority",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 462,
+            columnNumber: 11,
+          },
+          {
+            functionName: "runWithPriority$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 12583,
+            columnNumber: 9,
+          },
+          {
+            functionName: "discreteUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23709,
+            columnNumber: 13,
+          },
+          {
+            functionName: "discreteUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5066,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchDiscreteEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7199,
+            columnNumber: 2,
+          },
+        ],
+      },
+    },
+    _priority: "High",
+    _resourceType: "fetch",
+    cache: {},
+    connection: "9153",
+    request: {
+      method: "PATCH",
+      url: "http://localhost:3001/patch",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "sec-ch-ua",
+          value:
+            '" Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
+        },
+        {
+          name: "sec-ch-ua-mobile",
+          value: "?0",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "sec-ch-ua-platform",
+          value: '"macOS"',
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 631,
+      bodySize: 0,
+    },
+    response: {
+      status: 200,
+      statusText: "OK",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Content-Type",
+          value: "text/html; charset=utf-8",
+        },
+        {
+          name: "Content-Length",
+          value: "7",
+        },
+        {
+          name: "ETag",
+          value: 'W/"7-NeB8nxQYpuf32UWX5sjV9GoZABE"',
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:19 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 7,
+        mimeType: "text/html",
+        compression: 0,
+      },
+      redirectURL: "",
+      headersSize: 235,
+      bodySize: 7,
+      _transferSize: 242,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:19.014Z",
+    time: 15.326000000641216,
+    timings: {
+      blocked: 9.300000000021885,
+      dns: -1,
+      ssl: -1,
+      connect: -1,
+      send: 0.15200000000000014,
+      wait: 5.326999997339211,
+      receive: 0.5470000032801181,
+      _blocked_queueing: 7.286000000021886,
+    },
+  },
+  {
+    _initiator: {
+      type: "preflight",
+      url: "http://localhost:3001/patch",
+    },
+    _priority: "High",
+    _resourceType: "preflight",
+    cache: {},
+    connection: "9153",
+    request: {
+      method: "OPTIONS",
+      url: "http://localhost:3001/patch",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Access-Control-Request-Method",
+          value: "PATCH",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 543,
+      bodySize: 0,
+    },
+    response: {
+      status: 204,
+      statusText: "No Content",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Access-Control-Allow-Methods",
+          value: "GET,HEAD,PUT,PATCH,POST,DELETE",
+        },
+        {
+          name: "Vary",
+          value: "Access-Control-Request-Headers",
+        },
+        {
+          name: "Content-Length",
+          value: "0",
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:19 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 0,
+        mimeType: "x-unknown",
+        compression: 262,
+      },
+      redirectURL: "",
+      headersSize: 262,
+      bodySize: -262,
+      _transferSize: 0,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:19.022Z",
+    time: 4.13900000243308,
+    timings: {
+      blocked: -0.33899999999999997,
+      dns: -1,
+      ssl: -1,
+      connect: -1,
+      send: 0.14300000000000002,
+      wait: 3.5870000022151505,
+      receive: 0.4090000002179295,
+      _blocked_queueing: -1,
+    },
+  },
+  {
+    _initiator: {
+      type: "script",
+      stack: {
+        callFrames: [
+          {
+            functionName: "handleDeleteRequest",
+            scriptId: "21",
+            url: "http://localhost:3000/src/App.jsx",
+            lineNumber: 22,
+            columnNumber: 4,
+          },
+          {
+            functionName: "callCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5255,
+            columnNumber: 13,
+          },
+          {
+            functionName: "invokeGuardedCallbackDev",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5304,
+            columnNumber: 15,
+          },
+          {
+            functionName: "invokeGuardedCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5366,
+            columnNumber: 30,
+          },
+          {
+            functionName: "invokeGuardedCallbackAndCatchFirstError",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5380,
+            columnNumber: 24,
+          },
+          {
+            functionName: "executeDispatch",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9553,
+            columnNumber: 2,
+          },
+          {
+            functionName: "processDispatchQueueItemsInOrder",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9585,
+            columnNumber: 6,
+          },
+          {
+            functionName: "processDispatchQueue",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9598,
+            columnNumber: 4,
+          },
+          {
+            functionName: "dispatchEventsForPlugins",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9609,
+            columnNumber: 2,
+          },
+          {
+            functionName: "",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9817,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23692,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5055,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchEventForPluginEventSystem",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9816,
+            columnNumber: 2,
+          },
+          {
+            functionName: "attemptToDispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7315,
+            columnNumber: 2,
+          },
+          {
+            functionName: "dispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7234,
+            columnNumber: 18,
+          },
+          {
+            functionName: "unstable_runWithPriority",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 462,
+            columnNumber: 11,
+          },
+          {
+            functionName: "runWithPriority$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 12583,
+            columnNumber: 9,
+          },
+          {
+            functionName: "discreteUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23709,
+            columnNumber: 13,
+          },
+          {
+            functionName: "discreteUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5066,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchDiscreteEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7199,
+            columnNumber: 2,
+          },
+        ],
+      },
+    },
+    _priority: "High",
+    _resourceType: "fetch",
+    cache: {},
+    connection: "9191",
+    request: {
+      method: "DELETE",
+      url: "http://localhost:3001/delete",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "sec-ch-ua",
+          value:
+            '" Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
+        },
+        {
+          name: "sec-ch-ua-mobile",
+          value: "?0",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "sec-ch-ua-platform",
+          value: '"macOS"',
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 633,
+      bodySize: 0,
+    },
+    response: {
+      status: 200,
+      statusText: "OK",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Content-Type",
+          value: "text/html; charset=utf-8",
+        },
+        {
+          name: "Content-Length",
+          value: "7",
+        },
+        {
+          name: "ETag",
+          value: 'W/"7-fQkv+iSXqsgGs6ryo7Ol4WZ1XHE"',
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:20 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 7,
+        mimeType: "text/html",
+        compression: 0,
+      },
+      redirectURL: "",
+      headersSize: 235,
+      bodySize: 7,
+      _transferSize: 242,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:20.907Z",
+    time: 17.01600000524195,
+    timings: {
+      blocked: 10.608999998921995,
+      dns: -1,
+      ssl: -1,
+      connect: -1,
+      send: 0.0860000000000003,
+      wait: 5.85800000237301,
+      receive: 0.46300000394694507,
+      _blocked_queueing: 5.154999998921994,
+    },
+  },
+  {
+    _initiator: {
+      type: "preflight",
+      url: "http://localhost:3001/delete",
+    },
+    _priority: "High",
+    _resourceType: "preflight",
+    cache: {},
+    connection: "9191",
+    request: {
+      method: "OPTIONS",
+      url: "http://localhost:3001/delete",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Access-Control-Request-Method",
+          value: "DELETE",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 545,
+      bodySize: 0,
+    },
+    response: {
+      status: 204,
+      statusText: "No Content",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Access-Control-Allow-Methods",
+          value: "GET,HEAD,PUT,PATCH,POST,DELETE",
+        },
+        {
+          name: "Vary",
+          value: "Access-Control-Request-Headers",
+        },
+        {
+          name: "Content-Length",
+          value: "0",
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:20 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 0,
+        mimeType: "x-unknown",
+        compression: 262,
+      },
+      redirectURL: "",
+      headersSize: 262,
+      bodySize: -262,
+      _transferSize: 0,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:20.912Z",
+    time: 2.7570000059367157,
+    timings: {
+      blocked: -0.787,
+      dns: 0.008000000000000007,
+      ssl: -1,
+      connect: 0.24800000000000003,
+      send: 0.15299999999999997,
+      wait: 1.8749999986044132,
+      receive: 0.47300000733230263,
+      _blocked_queueing: -1,
+    },
+  },
+  {
+    _initiator: {
+      type: "script",
+      stack: {
+        callFrames: [
+          {
+            functionName: "handleCustomHeader",
+            scriptId: "21",
+            url: "http://localhost:3000/src/App.jsx",
+            lineNumber: 46,
+            columnNumber: 4,
+          },
+          {
+            functionName: "callCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5255,
+            columnNumber: 13,
+          },
+          {
+            functionName: "invokeGuardedCallbackDev",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5304,
+            columnNumber: 15,
+          },
+          {
+            functionName: "invokeGuardedCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5366,
+            columnNumber: 30,
+          },
+          {
+            functionName: "invokeGuardedCallbackAndCatchFirstError",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5380,
+            columnNumber: 24,
+          },
+          {
+            functionName: "executeDispatch",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9553,
+            columnNumber: 2,
+          },
+          {
+            functionName: "processDispatchQueueItemsInOrder",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9585,
+            columnNumber: 6,
+          },
+          {
+            functionName: "processDispatchQueue",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9598,
+            columnNumber: 4,
+          },
+          {
+            functionName: "dispatchEventsForPlugins",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9609,
+            columnNumber: 2,
+          },
+          {
+            functionName: "",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9817,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23692,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5055,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchEventForPluginEventSystem",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9816,
+            columnNumber: 2,
+          },
+          {
+            functionName: "attemptToDispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7315,
+            columnNumber: 2,
+          },
+          {
+            functionName: "dispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7234,
+            columnNumber: 18,
+          },
+          {
+            functionName: "unstable_runWithPriority",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 462,
+            columnNumber: 11,
+          },
+          {
+            functionName: "runWithPriority$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 12583,
+            columnNumber: 9,
+          },
+          {
+            functionName: "discreteUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23709,
+            columnNumber: 13,
+          },
+          {
+            functionName: "discreteUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5066,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchDiscreteEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7199,
+            columnNumber: 2,
+          },
+        ],
+      },
+    },
+    _priority: "High",
+    _resourceType: "fetch",
+    cache: {},
+    connection: "9191",
+    request: {
+      method: "GET",
+      url: "http://localhost:3001/custom-headers",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "sec-ch-ua",
+          value:
+            '" Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
+        },
+        {
+          name: "sec-ch-ua-mobile",
+          value: "?0",
+        },
+        {
+          name: "x-majid-sajadi",
+          value: "salam",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "sec-ch-ua-platform",
+          value: '"macOS"',
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 661,
+      bodySize: 0,
+    },
+    response: {
+      status: 200,
+      statusText: "OK",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Content-Type",
+          value: "application/json; charset=utf-8",
+        },
+        {
+          name: "Content-Length",
+          value: "680",
+        },
+        {
+          name: "ETag",
+          value: 'W/"2a8-JWe6hWsLYEy2Z1OjZjirnaxrggI"',
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:22 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 680,
+        mimeType: "application/json",
+        compression: 0,
+      },
+      redirectURL: "",
+      headersSize: 246,
+      bodySize: 680,
+      _transferSize: 926,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:22.134Z",
+    time: 12.188000000605825,
+    timings: {
+      blocked: 8.830000000001863,
+      dns: -1,
+      ssl: -1,
+      connect: -1,
+      send: 0.09299999999999997,
+      wait: 2.7229999990165235,
+      receive: 0.5420000015874393,
+      _blocked_queueing: 4.277000000001863,
+    },
+  },
+  {
+    _initiator: {
+      type: "preflight",
+      url: "http://localhost:3001/custom-headers",
+    },
+    _priority: "High",
+    _resourceType: "preflight",
+    cache: {},
+    connection: "9191",
+    request: {
+      method: "OPTIONS",
+      url: "http://localhost:3001/custom-headers",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Access-Control-Request-Method",
+          value: "GET",
+        },
+        {
+          name: "Access-Control-Request-Headers",
+          value: "x-majid-sajadi",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 598,
+      bodySize: 0,
+    },
+    response: {
+      status: 204,
+      statusText: "No Content",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Access-Control-Allow-Methods",
+          value: "GET,HEAD,PUT,PATCH,POST,DELETE",
+        },
+        {
+          name: "Vary",
+          value: "Access-Control-Request-Headers",
+        },
+        {
+          name: "Access-Control-Allow-Headers",
+          value: "x-majid-sajadi",
+        },
+        {
+          name: "Content-Length",
+          value: "0",
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:22 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 0,
+        mimeType: "x-unknown",
+        compression: 308,
+      },
+      redirectURL: "",
+      headersSize: 308,
+      bodySize: -308,
+      _transferSize: 0,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:22.138Z",
+    time: 2.0460000038184227,
+    timings: {
+      blocked: -0.821,
+      dns: -1,
+      ssl: -1,
+      connect: -1,
+      send: 0.07600000000000001,
+      wait: 1.4700000018975699,
+      receive: 0.5000000019208528,
+      _blocked_queueing: -1,
+    },
+  },
+  {
+    _initiator: {
+      type: "script",
+      stack: {
+        callFrames: [
+          {
+            functionName: "handleInternalError",
+            scriptId: "21",
+            url: "http://localhost:3000/src/App.jsx",
+            lineNumber: 60,
+            columnNumber: 4,
+          },
+          {
+            functionName: "callCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5255,
+            columnNumber: 13,
+          },
+          {
+            functionName: "invokeGuardedCallbackDev",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5304,
+            columnNumber: 15,
+          },
+          {
+            functionName: "invokeGuardedCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5366,
+            columnNumber: 30,
+          },
+          {
+            functionName: "invokeGuardedCallbackAndCatchFirstError",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5380,
+            columnNumber: 24,
+          },
+          {
+            functionName: "executeDispatch",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9553,
+            columnNumber: 2,
+          },
+          {
+            functionName: "processDispatchQueueItemsInOrder",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9585,
+            columnNumber: 6,
+          },
+          {
+            functionName: "processDispatchQueue",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9598,
+            columnNumber: 4,
+          },
+          {
+            functionName: "dispatchEventsForPlugins",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9609,
+            columnNumber: 2,
+          },
+          {
+            functionName: "",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9817,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23692,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5055,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchEventForPluginEventSystem",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9816,
+            columnNumber: 2,
+          },
+          {
+            functionName: "attemptToDispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7315,
+            columnNumber: 2,
+          },
+          {
+            functionName: "dispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7234,
+            columnNumber: 18,
+          },
+          {
+            functionName: "unstable_runWithPriority",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 462,
+            columnNumber: 11,
+          },
+          {
+            functionName: "runWithPriority$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 12583,
+            columnNumber: 9,
+          },
+          {
+            functionName: "discreteUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23709,
+            columnNumber: 13,
+          },
+          {
+            functionName: "discreteUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5066,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchDiscreteEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7199,
+            columnNumber: 2,
+          },
+        ],
+      },
+    },
+    _priority: "High",
+    _resourceType: "fetch",
+    cache: {},
+    connection: "9191",
+    request: {
+      method: "GET",
+      url: "http://localhost:3001/internal-error",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "sec-ch-ua",
+          value:
+            '" Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
+        },
+        {
+          name: "sec-ch-ua-mobile",
+          value: "?0",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "sec-ch-ua-platform",
+          value: '"macOS"',
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 638,
+      bodySize: 0,
+    },
+    response: {
+      status: 500,
+      statusText: "Internal Server Error",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:22 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Content-Length",
+          value: "0",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 0,
+        mimeType: "x-unknown",
+        compression: 0,
+      },
+      redirectURL: "",
+      headersSize: 173,
+      bodySize: 0,
+      _transferSize: 173,
+      _error: "net::ERR_ABORTED",
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:22.820Z",
+    time: 11.6379999963101,
+    timings: {
+      blocked: 4.891999997319654,
+      dns: -1,
+      ssl: -1,
+      connect: -1,
+      send: 0.09099999999999975,
+      wait: 2.328999996952247,
+      receive: 4.3260000020381995,
+      _blocked_queueing: 1.6469999973196536,
+    },
+  },
+  {
+    _initiator: {
+      type: "script",
+      stack: {
+        callFrames: [
+          {
+            functionName: "handleInvalidUrl",
+            scriptId: "21",
+            url: "http://localhost:3000/src/App.jsx",
+            lineNumber: 74,
+            columnNumber: 4,
+          },
+          {
+            functionName: "callCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5255,
+            columnNumber: 13,
+          },
+          {
+            functionName: "invokeGuardedCallbackDev",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5304,
+            columnNumber: 15,
+          },
+          {
+            functionName: "invokeGuardedCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5366,
+            columnNumber: 30,
+          },
+          {
+            functionName: "invokeGuardedCallbackAndCatchFirstError",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5380,
+            columnNumber: 24,
+          },
+          {
+            functionName: "executeDispatch",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9553,
+            columnNumber: 2,
+          },
+          {
+            functionName: "processDispatchQueueItemsInOrder",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9585,
+            columnNumber: 6,
+          },
+          {
+            functionName: "processDispatchQueue",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9598,
+            columnNumber: 4,
+          },
+          {
+            functionName: "dispatchEventsForPlugins",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9609,
+            columnNumber: 2,
+          },
+          {
+            functionName: "",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9817,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23692,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5055,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchEventForPluginEventSystem",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9816,
+            columnNumber: 2,
+          },
+          {
+            functionName: "attemptToDispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7315,
+            columnNumber: 2,
+          },
+          {
+            functionName: "dispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7234,
+            columnNumber: 18,
+          },
+          {
+            functionName: "unstable_runWithPriority",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 462,
+            columnNumber: 11,
+          },
+          {
+            functionName: "runWithPriority$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 12583,
+            columnNumber: 9,
+          },
+          {
+            functionName: "discreteUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23709,
+            columnNumber: 13,
+          },
+          {
+            functionName: "discreteUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5066,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchDiscreteEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7199,
+            columnNumber: 2,
+          },
+        ],
+      },
+    },
+    _priority: "High",
+    _resourceType: "fetch",
+    cache: {},
+    connection: "9224",
+    request: {
+      method: "GET",
+      url: "http://localhost:3000/invalid-url",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3000",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "sec-ch-ua",
+          value:
+            '" Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
+        },
+        {
+          name: "sec-ch-ua-mobile",
+          value: "?0",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "sec-ch-ua-platform",
+          value: '"macOS"',
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-origin",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+        {
+          name: "Cookie",
+          value:
+            "csrftoken=RPMCliUNBxGJGA6dXT0BkEB37AWSnaRlWN0i7ZX67wos9AiPiiYQRKqwO7FefMrT",
+        },
+      ],
+      queryString: [],
+      cookies: [
+        {
+          name: "csrftoken",
+          value:
+            "RPMCliUNBxGJGA6dXT0BkEB37AWSnaRlWN0i7ZX67wos9AiPiiYQRKqwO7FefMrT",
+          path: "/",
+          domain: "localhost",
+          expires: "2022-09-04T11:08:37.577Z",
+          httpOnly: false,
+          secure: false,
+          sameSite: "Lax",
+        },
+      ],
+      headersSize: 690,
+      bodySize: 0,
+    },
+    response: {
+      status: 404,
+      statusText: "Not Found",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Content-Type",
+          value: "text/plain; charset=utf-8",
+        },
+        {
+          name: "Content-Length",
+          value: "9",
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:23 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 9,
+        mimeType: "text/plain",
+        compression: 0,
+      },
+      redirectURL: "",
+      headersSize: 147,
+      bodySize: 9,
+      _transferSize: 156,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:23.615Z",
+    time: 13.324000000400469,
+    timings: {
+      blocked: 6.1609999986351465,
+      dns: 0.018999999999999684,
+      ssl: -1,
+      connect: 0.35799999999999965,
+      send: 0.25300000000000056,
+      wait: 6.145000001380685,
+      receive: 0.3880000003846362,
+      _blocked_queueing: 2.7469999986351468,
+    },
+  },
+  {
+    _initiator: {
+      type: "script",
+      stack: {
+        callFrames: [
+          {
+            functionName: "handleValidationError",
+            scriptId: "21",
+            url: "http://localhost:3000/src/App.jsx",
+            lineNumber: 53,
+            columnNumber: 4,
+          },
+          {
+            functionName: "callCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5255,
+            columnNumber: 13,
+          },
+          {
+            functionName: "invokeGuardedCallbackDev",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5304,
+            columnNumber: 15,
+          },
+          {
+            functionName: "invokeGuardedCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5366,
+            columnNumber: 30,
+          },
+          {
+            functionName: "invokeGuardedCallbackAndCatchFirstError",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5380,
+            columnNumber: 24,
+          },
+          {
+            functionName: "executeDispatch",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9553,
+            columnNumber: 2,
+          },
+          {
+            functionName: "processDispatchQueueItemsInOrder",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9585,
+            columnNumber: 6,
+          },
+          {
+            functionName: "processDispatchQueue",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9598,
+            columnNumber: 4,
+          },
+          {
+            functionName: "dispatchEventsForPlugins",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9609,
+            columnNumber: 2,
+          },
+          {
+            functionName: "",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9817,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23692,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5055,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchEventForPluginEventSystem",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9816,
+            columnNumber: 2,
+          },
+          {
+            functionName: "attemptToDispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7315,
+            columnNumber: 2,
+          },
+          {
+            functionName: "dispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7234,
+            columnNumber: 18,
+          },
+          {
+            functionName: "unstable_runWithPriority",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 462,
+            columnNumber: 11,
+          },
+          {
+            functionName: "runWithPriority$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 12583,
+            columnNumber: 9,
+          },
+          {
+            functionName: "discreteUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23709,
+            columnNumber: 13,
+          },
+          {
+            functionName: "discreteUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5066,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchDiscreteEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7199,
+            columnNumber: 2,
+          },
+        ],
+      },
+    },
+    _priority: "High",
+    _resourceType: "fetch",
+    cache: {},
+    connection: "9191",
+    request: {
+      method: "GET",
+      url: "http://localhost:3001/validation-error",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "sec-ch-ua",
+          value:
+            '" Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
+        },
+        {
+          name: "sec-ch-ua-mobile",
+          value: "?0",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "sec-ch-ua-platform",
+          value: '"macOS"',
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 640,
+      bodySize: 0,
+    },
+    response: {
+      status: 400,
+      statusText: "Bad Request",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:24 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Content-Length",
+          value: "0",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 0,
+        mimeType: "x-unknown",
+        compression: 0,
+      },
+      redirectURL: "",
+      headersSize: 163,
+      bodySize: 0,
+      _transferSize: 163,
+      _error: "net::ERR_ABORTED",
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:24.578Z",
+    time: 10.680999999749474,
+    timings: {
+      blocked: 4.62399999679625,
+      dns: -1,
+      ssl: -1,
+      connect: -1,
+      send: 0.14300000000000002,
+      wait: 1.8950000029820948,
+      receive: 4.018999999971129,
+      _blocked_queueing: 2.9349999967962503,
+    },
+  },
+  {
+    _initiator: {
+      type: "script",
+      stack: {
+        callFrames: [
+          {
+            functionName: "handleNotFoundError",
+            scriptId: "21",
+            url: "http://localhost:3000/src/App.jsx",
+            lineNumber: 67,
+            columnNumber: 4,
+          },
+          {
+            functionName: "callCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5255,
+            columnNumber: 13,
+          },
+          {
+            functionName: "invokeGuardedCallbackDev",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5304,
+            columnNumber: 15,
+          },
+          {
+            functionName: "invokeGuardedCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5366,
+            columnNumber: 30,
+          },
+          {
+            functionName: "invokeGuardedCallbackAndCatchFirstError",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5380,
+            columnNumber: 24,
+          },
+          {
+            functionName: "executeDispatch",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9553,
+            columnNumber: 2,
+          },
+          {
+            functionName: "processDispatchQueueItemsInOrder",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9585,
+            columnNumber: 6,
+          },
+          {
+            functionName: "processDispatchQueue",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9598,
+            columnNumber: 4,
+          },
+          {
+            functionName: "dispatchEventsForPlugins",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9609,
+            columnNumber: 2,
+          },
+          {
+            functionName: "",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9817,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23692,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5055,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchEventForPluginEventSystem",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9816,
+            columnNumber: 2,
+          },
+          {
+            functionName: "attemptToDispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7315,
+            columnNumber: 2,
+          },
+          {
+            functionName: "dispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7234,
+            columnNumber: 18,
+          },
+          {
+            functionName: "unstable_runWithPriority",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 462,
+            columnNumber: 11,
+          },
+          {
+            functionName: "runWithPriority$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 12583,
+            columnNumber: 9,
+          },
+          {
+            functionName: "discreteUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23709,
+            columnNumber: 13,
+          },
+          {
+            functionName: "discreteUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5066,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchDiscreteEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7199,
+            columnNumber: 2,
+          },
+        ],
+      },
+    },
+    _priority: "High",
+    _resourceType: "fetch",
+    cache: {},
+    connection: "9191",
+    request: {
+      method: "GET",
+      url: "http://localhost:3001/not-found",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "sec-ch-ua",
+          value:
+            '" Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
+        },
+        {
+          name: "sec-ch-ua-mobile",
+          value: "?0",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "sec-ch-ua-platform",
+          value: '"macOS"',
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 633,
+      bodySize: 0,
+    },
+    response: {
+      status: 404,
+      statusText: "Not Found",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Content-Security-Policy",
+          value: "default-src 'none'",
+        },
+        {
+          name: "X-Content-Type-Options",
+          value: "nosniff",
+        },
+        {
+          name: "Content-Type",
+          value: "text/html; charset=utf-8",
+        },
+        {
+          name: "Content-Length",
+          value: "148",
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:25 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 148,
+        mimeType: "text/html",
+        compression: 0,
+      },
+      redirectURL: "",
+      headersSize: 281,
+      bodySize: 148,
+      _transferSize: 429,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:25.187Z",
+    time: 11.00600000063423,
+    timings: {
+      blocked: 6.561999993667472,
+      dns: -1,
+      ssl: -1,
+      connect: -1,
+      send: 0.12199999999999989,
+      wait: 3.717999998942018,
+      receive: 0.604000008024741,
+      _blocked_queueing: 2.237999993667472,
+    },
+  },
+  {
+    _initiator: {
+      type: "script",
+      stack: {
+        callFrames: [
+          {
+            functionName: "handleJsonBody",
+            scriptId: "21",
+            url: "http://localhost:3000/src/App.jsx",
+            lineNumber: 96,
+            columnNumber: 4,
+          },
+          {
+            functionName: "callCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5255,
+            columnNumber: 13,
+          },
+          {
+            functionName: "invokeGuardedCallbackDev",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5304,
+            columnNumber: 15,
+          },
+          {
+            functionName: "invokeGuardedCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5366,
+            columnNumber: 30,
+          },
+          {
+            functionName: "invokeGuardedCallbackAndCatchFirstError",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5380,
+            columnNumber: 24,
+          },
+          {
+            functionName: "executeDispatch",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9553,
+            columnNumber: 2,
+          },
+          {
+            functionName: "processDispatchQueueItemsInOrder",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9585,
+            columnNumber: 6,
+          },
+          {
+            functionName: "processDispatchQueue",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9598,
+            columnNumber: 4,
+          },
+          {
+            functionName: "dispatchEventsForPlugins",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9609,
+            columnNumber: 2,
+          },
+          {
+            functionName: "",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9817,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23692,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5055,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchEventForPluginEventSystem",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9816,
+            columnNumber: 2,
+          },
+          {
+            functionName: "attemptToDispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7315,
+            columnNumber: 2,
+          },
+          {
+            functionName: "dispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7234,
+            columnNumber: 18,
+          },
+          {
+            functionName: "unstable_runWithPriority",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 462,
+            columnNumber: 11,
+          },
+          {
+            functionName: "runWithPriority$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 12583,
+            columnNumber: 9,
+          },
+          {
+            functionName: "discreteUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23709,
+            columnNumber: 13,
+          },
+          {
+            functionName: "discreteUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5066,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchDiscreteEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7199,
+            columnNumber: 2,
+          },
+        ],
+      },
+    },
+    _priority: "High",
+    _resourceType: "fetch",
+    cache: {},
+    connection: "9191",
+    request: {
+      method: "POST",
+      url: "http://localhost:3001/json",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Content-Length",
+          value: "125",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "sec-ch-ua",
+          value:
+            '" Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
+        },
+        {
+          name: "sec-ch-ua-mobile",
+          value: "?0",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "sec-ch-ua-platform",
+          value: '"macOS"',
+        },
+        {
+          name: "content-type",
+          value: "application/json",
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 682,
+      bodySize: 125,
+      postData: {
+        mimeType: "application/json",
+        text: '{"name":"majid","last":"sajad","age":28,"single":false,"friends":["ahmad","meisam"],"job":{"title":"developer","free":false}}',
+      },
+    },
+    response: {
+      status: 200,
+      statusText: "OK",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Content-Type",
+          value: "application/json; charset=utf-8",
+        },
+        {
+          name: "Content-Length",
+          value: "125",
+        },
+        {
+          name: "ETag",
+          value: 'W/"7d-Rg+E8J5G6AG4mV9utz5on0+89fc"',
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:25 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 125,
+        mimeType: "application/json",
+        compression: 0,
+      },
+      redirectURL: "",
+      headersSize: 245,
+      bodySize: 125,
+      _transferSize: 370,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:25.942Z",
+    time: 47.6870000056806,
+    timings: {
+      blocked: 6.136000001550652,
+      dns: -1,
+      ssl: -1,
+      connect: -1,
+      send: 0.12299999999999997,
+      wait: 41.07700000171922,
+      receive: 0.3510000024107285,
+      _blocked_queueing: 5.915000001550652,
+    },
+  },
+  {
+    _initiator: {
+      type: "preflight",
+      url: "http://localhost:3001/json",
+    },
+    _priority: "High",
+    _resourceType: "preflight",
+    cache: {},
+    connection: "9191",
+    request: {
+      method: "OPTIONS",
+      url: "http://localhost:3001/json",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Access-Control-Request-Method",
+          value: "POST",
+        },
+        {
+          name: "Access-Control-Request-Headers",
+          value: "content-type",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 587,
+      bodySize: 0,
+    },
+    response: {
+      status: 204,
+      statusText: "No Content",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Access-Control-Allow-Methods",
+          value: "GET,HEAD,PUT,PATCH,POST,DELETE",
+        },
+        {
+          name: "Vary",
+          value: "Access-Control-Request-Headers",
+        },
+        {
+          name: "Access-Control-Allow-Headers",
+          value: "content-type",
+        },
+        {
+          name: "Content-Length",
+          value: "0",
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:25 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 0,
+        mimeType: "x-unknown",
+        compression: 306,
+      },
+      redirectURL: "",
+      headersSize: 306,
+      bodySize: -306,
+      _transferSize: 0,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:25.952Z",
+    time: 3.06399999686284,
+    timings: {
+      blocked: -0.5700000000000001,
+      dns: -1,
+      ssl: -1,
+      connect: -1,
+      send: 0.197,
+      wait: 2.3929999964679594,
+      receive: 0.47400000039488077,
+      _blocked_queueing: -1,
+    },
+  },
+  {
+    _initiator: {
+      type: "script",
+      stack: {
+        callFrames: [
+          {
+            functionName: "handleJsonBodyWithoutContentType",
+            scriptId: "21",
+            url: "http://localhost:3000/src/App.jsx",
+            lineNumber: 115,
+            columnNumber: 4,
+          },
+          {
+            functionName: "callCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5255,
+            columnNumber: 13,
+          },
+          {
+            functionName: "invokeGuardedCallbackDev",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5304,
+            columnNumber: 15,
+          },
+          {
+            functionName: "invokeGuardedCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5366,
+            columnNumber: 30,
+          },
+          {
+            functionName: "invokeGuardedCallbackAndCatchFirstError",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5380,
+            columnNumber: 24,
+          },
+          {
+            functionName: "executeDispatch",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9553,
+            columnNumber: 2,
+          },
+          {
+            functionName: "processDispatchQueueItemsInOrder",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9585,
+            columnNumber: 6,
+          },
+          {
+            functionName: "processDispatchQueue",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9598,
+            columnNumber: 4,
+          },
+          {
+            functionName: "dispatchEventsForPlugins",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9609,
+            columnNumber: 2,
+          },
+          {
+            functionName: "",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9817,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23692,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5055,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchEventForPluginEventSystem",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9816,
+            columnNumber: 2,
+          },
+          {
+            functionName: "attemptToDispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7315,
+            columnNumber: 2,
+          },
+          {
+            functionName: "dispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7234,
+            columnNumber: 18,
+          },
+          {
+            functionName: "unstable_runWithPriority",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 462,
+            columnNumber: 11,
+          },
+          {
+            functionName: "runWithPriority$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 12583,
+            columnNumber: 9,
+          },
+          {
+            functionName: "discreteUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23709,
+            columnNumber: 13,
+          },
+          {
+            functionName: "discreteUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5066,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchDiscreteEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7199,
+            columnNumber: 2,
+          },
+        ],
+      },
+    },
+    _priority: "High",
+    _resourceType: "fetch",
+    cache: {},
+    connection: "9191",
+    request: {
+      method: "POST",
+      url: "http://localhost:3001/json",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Content-Length",
+          value: "125",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "sec-ch-ua",
+          value:
+            '" Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
+        },
+        {
+          name: "sec-ch-ua-mobile",
+          value: "?0",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "sec-ch-ua-platform",
+          value: '"macOS"',
+        },
+        {
+          name: "Content-Type",
+          value: "text/plain;charset=UTF-8",
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 690,
+      bodySize: 125,
+      postData: {
+        mimeType: "text/plain;charset=UTF-8",
+        text: '{"name":"majid","last":"sajad","age":28,"single":false,"friends":["ahmad","meisam"],"job":{"title":"developer","free":false}}',
+      },
+    },
+    response: {
+      status: 200,
+      statusText: "OK",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Content-Type",
+          value: "application/json; charset=utf-8",
+        },
+        {
+          name: "Content-Length",
+          value: "2",
+        },
+        {
+          name: "ETag",
+          value: 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"',
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:26 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 2,
+        mimeType: "application/json",
+        compression: 0,
+      },
+      redirectURL: "",
+      headersSize: 242,
+      bodySize: 2,
+      _transferSize: 244,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:26.695Z",
+    time: 6.114000003435649,
+    timings: {
+      blocked: 3.642000002087094,
+      dns: -1,
+      ssl: -1,
+      connect: -1,
+      send: 0.14100000000000001,
+      wait: 1.9260000024847685,
+      receive: 0.40499999886378646,
+      _blocked_queueing: 3.316000002087094,
+    },
+  },
+  {
+    _initiator: {
+      type: "script",
+      stack: {
+        callFrames: [
+          {
+            functionName: "handleUrlEncoded",
+            scriptId: "21",
+            url: "http://localhost:3000/src/App.jsx",
+            lineNumber: 131,
+            columnNumber: 4,
+          },
+          {
+            functionName: "callCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5255,
+            columnNumber: 13,
+          },
+          {
+            functionName: "invokeGuardedCallbackDev",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5304,
+            columnNumber: 15,
+          },
+          {
+            functionName: "invokeGuardedCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5366,
+            columnNumber: 30,
+          },
+          {
+            functionName: "invokeGuardedCallbackAndCatchFirstError",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5380,
+            columnNumber: 24,
+          },
+          {
+            functionName: "executeDispatch",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9553,
+            columnNumber: 2,
+          },
+          {
+            functionName: "processDispatchQueueItemsInOrder",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9585,
+            columnNumber: 6,
+          },
+          {
+            functionName: "processDispatchQueue",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9598,
+            columnNumber: 4,
+          },
+          {
+            functionName: "dispatchEventsForPlugins",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9609,
+            columnNumber: 2,
+          },
+          {
+            functionName: "",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9817,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23692,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5055,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchEventForPluginEventSystem",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9816,
+            columnNumber: 2,
+          },
+          {
+            functionName: "attemptToDispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7315,
+            columnNumber: 2,
+          },
+          {
+            functionName: "dispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7234,
+            columnNumber: 18,
+          },
+          {
+            functionName: "unstable_runWithPriority",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 462,
+            columnNumber: 11,
+          },
+          {
+            functionName: "runWithPriority$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 12583,
+            columnNumber: 9,
+          },
+          {
+            functionName: "discreteUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23709,
+            columnNumber: 13,
+          },
+          {
+            functionName: "discreteUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5066,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchDiscreteEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7199,
+            columnNumber: 2,
+          },
+        ],
+      },
+    },
+    _priority: "High",
+    _resourceType: "fetch",
+    cache: {},
+    connection: "9191",
+    request: {
+      method: "POST",
+      url: "http://localhost:3001/json",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Content-Length",
+          value: "42",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "sec-ch-ua",
+          value:
+            '" Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
+        },
+        {
+          name: "sec-ch-ua-mobile",
+          value: "?0",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "sec-ch-ua-platform",
+          value: '"macOS"',
+        },
+        {
+          name: "content-type",
+          value: "application/x-www-form-urlencoded",
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 698,
+      bodySize: 42,
+      postData: {
+        mimeType: "application/x-www-form-urlencoded",
+        text: "name=majid&last=sajadi&age=28&single=false",
+        params: [
+          {
+            name: "name",
+            value: "majid",
+          },
+          {
+            name: "last",
+            value: "sajadi",
+          },
+          {
+            name: "age",
+            value: "28",
+          },
+          {
+            name: "single",
+            value: "false",
+          },
+        ],
+      },
+    },
+    response: {
+      status: 200,
+      statusText: "OK",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Content-Type",
+          value: "application/json; charset=utf-8",
+        },
+        {
+          name: "Content-Length",
+          value: "60",
+        },
+        {
+          name: "ETag",
+          value: 'W/"3c-IuVqX1Pvo9R43zSJ9fSR09qGeiw"',
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:27 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 60,
+        mimeType: "application/json",
+        compression: 0,
+      },
+      redirectURL: "",
+      headersSize: 244,
+      bodySize: 60,
+      _transferSize: 304,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:27.382Z",
+    time: 7.896000002801884,
+    timings: {
+      blocked: 2.7460000006100165,
+      dns: -1,
+      ssl: -1,
+      connect: -1,
+      send: 0.26399999999999996,
+      wait: 4.200000002786982,
+      receive: 0.6859999994048849,
+      _blocked_queueing: 2.2800000006100163,
+    },
+  },
+  {
+    _initiator: {
+      type: "script",
+      stack: {
+        callFrames: [
+          {
+            functionName: "handleUrlEncodedWithoutContentType",
+            scriptId: "21",
+            url: "http://localhost:3000/src/App.jsx",
+            lineNumber: 144,
+            columnNumber: 4,
+          },
+          {
+            functionName: "callCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5255,
+            columnNumber: 13,
+          },
+          {
+            functionName: "invokeGuardedCallbackDev",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5304,
+            columnNumber: 15,
+          },
+          {
+            functionName: "invokeGuardedCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5366,
+            columnNumber: 30,
+          },
+          {
+            functionName: "invokeGuardedCallbackAndCatchFirstError",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5380,
+            columnNumber: 24,
+          },
+          {
+            functionName: "executeDispatch",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9553,
+            columnNumber: 2,
+          },
+          {
+            functionName: "processDispatchQueueItemsInOrder",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9585,
+            columnNumber: 6,
+          },
+          {
+            functionName: "processDispatchQueue",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9598,
+            columnNumber: 4,
+          },
+          {
+            functionName: "dispatchEventsForPlugins",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9609,
+            columnNumber: 2,
+          },
+          {
+            functionName: "",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9817,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23692,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5055,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchEventForPluginEventSystem",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9816,
+            columnNumber: 2,
+          },
+          {
+            functionName: "attemptToDispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7315,
+            columnNumber: 2,
+          },
+          {
+            functionName: "dispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7234,
+            columnNumber: 18,
+          },
+          {
+            functionName: "unstable_runWithPriority",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 462,
+            columnNumber: 11,
+          },
+          {
+            functionName: "runWithPriority$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 12583,
+            columnNumber: 9,
+          },
+          {
+            functionName: "discreteUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23709,
+            columnNumber: 13,
+          },
+          {
+            functionName: "discreteUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5066,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchDiscreteEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7199,
+            columnNumber: 2,
+          },
+        ],
+      },
+    },
+    _priority: "High",
+    _resourceType: "fetch",
+    cache: {},
+    connection: "9191",
+    request: {
+      method: "POST",
+      url: "http://localhost:3001/json",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Content-Length",
+          value: "42",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "sec-ch-ua",
+          value:
+            '" Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
+        },
+        {
+          name: "sec-ch-ua-mobile",
+          value: "?0",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "sec-ch-ua-platform",
+          value: '"macOS"',
+        },
+        {
+          name: "Content-Type",
+          value: "application/x-www-form-urlencoded;charset=UTF-8",
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 712,
+      bodySize: 42,
+      postData: {
+        mimeType: "application/x-www-form-urlencoded;charset=UTF-8",
+        text: "name=majid&last=sajadi&age=28&single=false",
+        params: [
+          {
+            name: "name",
+            value: "majid",
+          },
+          {
+            name: "last",
+            value: "sajadi",
+          },
+          {
+            name: "age",
+            value: "28",
+          },
+          {
+            name: "single",
+            value: "false",
+          },
+        ],
+      },
+    },
+    response: {
+      status: 200,
+      statusText: "OK",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Content-Type",
+          value: "application/json; charset=utf-8",
+        },
+        {
+          name: "Content-Length",
+          value: "60",
+        },
+        {
+          name: "ETag",
+          value: 'W/"3c-IuVqX1Pvo9R43zSJ9fSR09qGeiw"',
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:28 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 60,
+        mimeType: "application/json",
+        compression: 0,
+      },
+      redirectURL: "",
+      headersSize: 244,
+      bodySize: 60,
+      _transferSize: 304,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:28.047Z",
+    time: 6.40199999907054,
+    timings: {
+      blocked: 2.2299999980325813,
+      dns: -1,
+      ssl: -1,
+      connect: -1,
+      send: 0.12899999999999995,
+      wait: 3.5639999989503997,
+      receive: 0.47900000208755955,
+      _blocked_queueing: 1.949999998032581,
+    },
+  },
+  {
+    _initiator: {
+      type: "script",
+      stack: {
+        callFrames: [
+          {
+            functionName: "handleForm",
+            scriptId: "21",
+            url: "http://localhost:3000/src/App.jsx",
+            lineNumber: 158,
+            columnNumber: 4,
+          },
+          {
+            functionName: "callCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5255,
+            columnNumber: 13,
+          },
+          {
+            functionName: "invokeGuardedCallbackDev",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5304,
+            columnNumber: 15,
+          },
+          {
+            functionName: "invokeGuardedCallback",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5366,
+            columnNumber: 30,
+          },
+          {
+            functionName: "invokeGuardedCallbackAndCatchFirstError",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5380,
+            columnNumber: 24,
+          },
+          {
+            functionName: "executeDispatch",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9553,
+            columnNumber: 2,
+          },
+          {
+            functionName: "processDispatchQueueItemsInOrder",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9585,
+            columnNumber: 6,
+          },
+          {
+            functionName: "processDispatchQueue",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9598,
+            columnNumber: 4,
+          },
+          {
+            functionName: "dispatchEventsForPlugins",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9609,
+            columnNumber: 2,
+          },
+          {
+            functionName: "",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9817,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23692,
+            columnNumber: 11,
+          },
+          {
+            functionName: "batchedEventUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5055,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchEventForPluginEventSystem",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 9816,
+            columnNumber: 2,
+          },
+          {
+            functionName: "attemptToDispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7315,
+            columnNumber: 2,
+          },
+          {
+            functionName: "dispatchEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7234,
+            columnNumber: 18,
+          },
+          {
+            functionName: "unstable_runWithPriority",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 462,
+            columnNumber: 11,
+          },
+          {
+            functionName: "runWithPriority$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 12583,
+            columnNumber: 9,
+          },
+          {
+            functionName: "discreteUpdates$1",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 23709,
+            columnNumber: 13,
+          },
+          {
+            functionName: "discreteUpdates",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 5066,
+            columnNumber: 11,
+          },
+          {
+            functionName: "dispatchDiscreteEvent",
+            scriptId: "19",
+            url: "http://localhost:3000/@modules/react-dom.js",
+            lineNumber: 7199,
+            columnNumber: 2,
+          },
+        ],
+      },
+    },
+    _priority: "High",
+    _resourceType: "fetch",
+    cache: {},
+    connection: "9191",
+    request: {
+      method: "POST",
+      url: "http://localhost:3001/form",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "Host",
+          value: "localhost:3001",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+        {
+          name: "Content-Length",
+          value: "427",
+        },
+        {
+          name: "Pragma",
+          value: "no-cache",
+        },
+        {
+          name: "Cache-Control",
+          value: "no-cache",
+        },
+        {
+          name: "sec-ch-ua",
+          value:
+            '" Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
+        },
+        {
+          name: "sec-ch-ua-mobile",
+          value: "?0",
+        },
+        {
+          name: "User-Agent",
+          value:
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
+        },
+        {
+          name: "sec-ch-ua-platform",
+          value: '"macOS"',
+        },
+        {
+          name: "Content-Type",
+          value:
+            "multipart/form-data; boundary=----WebKitFormBoundaryRXuSd5WIBTwXRZTR",
+        },
+        {
+          name: "Accept",
+          value: "*/*",
+        },
+        {
+          name: "Origin",
+          value: "http://localhost:3000",
+        },
+        {
+          name: "Sec-Fetch-Site",
+          value: "same-site",
+        },
+        {
+          name: "Sec-Fetch-Mode",
+          value: "cors",
+        },
+        {
+          name: "Sec-Fetch-Dest",
+          value: "empty",
+        },
+        {
+          name: "Referer",
+          value: "http://localhost:3000/",
+        },
+        {
+          name: "Accept-Encoding",
+          value: "gzip, deflate, br",
+        },
+        {
+          name: "Accept-Language",
+          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
+        },
+      ],
+      queryString: [],
+      cookies: [],
+      headersSize: 734,
+      bodySize: 427,
+      postData: {
+        mimeType:
+          "multipart/form-data; boundary=----WebKitFormBoundaryRXuSd5WIBTwXRZTR",
+        text: '------WebKitFormBoundaryRXuSd5WIBTwXRZTR\r\nContent-Disposition: form-data; name="name"\r\n\r\nmajid\r\n------WebKitFormBoundaryRXuSd5WIBTwXRZTR\r\nContent-Disposition: form-data; name="last"\r\n\r\nsajadi\r\n------WebKitFormBoundaryRXuSd5WIBTwXRZTR\r\nContent-Disposition: form-data; name="age"\r\n\r\n28\r\n------WebKitFormBoundaryRXuSd5WIBTwXRZTR\r\nContent-Disposition: form-data; name="single"\r\n\r\nfalse\r\n------WebKitFormBoundaryRXuSd5WIBTwXRZTR--\r\n',
+        params: [
+          {
+            name: "name",
+            value: "majid",
+          },
+          {
+            name: "last",
+            value: "sajadi",
+          },
+          {
+            name: "age",
+            value: "28",
+          },
+          {
+            name: "single",
+            value: "false",
+          },
+        ],
+      },
+    },
+    response: {
+      status: 200,
+      statusText: "OK",
+      httpVersion: "HTTP/1.1",
+      headers: [
+        {
+          name: "X-Powered-By",
+          value: "Express",
+        },
+        {
+          name: "Access-Control-Allow-Origin",
+          value: "*",
+        },
+        {
+          name: "Content-Type",
+          value: "application/json; charset=utf-8",
+        },
+        {
+          name: "Content-Length",
+          value: "60",
+        },
+        {
+          name: "ETag",
+          value: 'W/"3c-IuVqX1Pvo9R43zSJ9fSR09qGeiw"',
+        },
+        {
+          name: "Date",
+          value: "Thu, 10 Feb 2022 18:14:28 GMT",
+        },
+        {
+          name: "Connection",
+          value: "keep-alive",
+        },
+      ],
+      cookies: [],
+      content: {
+        size: 60,
+        mimeType: "application/json",
+        compression: 0,
+      },
+      redirectURL: "",
+      headersSize: 244,
+      bodySize: 60,
+      _transferSize: 304,
+      _error: null,
+    },
+    serverIPAddress: "[::1]",
+    startedDateTime: "2022-02-10T18:14:28.834Z",
+    time: 19.64099999895552,
+    timings: {
+      blocked: 3.997000001081731,
+      dns: -1,
+      ssl: -1,
+      connect: -1,
+      send: 0.15300000000000002,
+      wait: 14.513000001479872,
+      receive: 0.977999996393919,
+      _blocked_queueing: 3.399000001081731,
+    },
+  },
+];

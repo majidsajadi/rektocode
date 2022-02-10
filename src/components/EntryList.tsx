@@ -21,27 +21,44 @@ export default function EntryList({ entries, onClick }: EntryListProps) {
     return classNames(base, color);
   };
 
+  const getURL = (raw: string) => {
+    let { hostname, pathname: url } = new URL(raw);
+    if (url.charAt(0) === "/") {
+      url = url.slice(1);
+    }
+
+    if (url === "") {
+      url = hostname;
+    }
+
+    return url;
+  };
+
   return (
     <ul>
-      {entries.map((entry) => (
-        <li
-          key={uuidv4()}
-          onClick={() => onClick(entry)}
-          className="p-1 cursor-pointer odd:bg-highlight-background hover:bg-active-background group"
-        >
-          <div className="flex space-x-4 items-center">
-            <span className="flex-none w-14 text-secondary group-hover:text-white">
-              {entry.request.method}
-            </span>
-            <span className={getMethodCLS(entry.response.status)}>
-              {entry.response.status}
-            </span>
-            <span className="flex-1 group-hover:text-white">
-              {entry.request.url}
-            </span>
-          </div>
-        </li>
-      ))}
+      {entries.map((entry) => {
+        const url = getURL(entry.request.url);
+
+        return (
+          <li
+            key={uuidv4()}
+            onClick={() => onClick(entry)}
+            className="p-1 cursor-pointer odd:bg-highlight-background hover:bg-active-background group"
+          >
+            <div className="flex space-x-4 items-center">
+              <span className="flex-none w-14 text-secondary group-hover:text-white">
+                {entry.request.method}
+              </span>
+              <span className={getMethodCLS(entry.response.status)}>
+                {entry.response.status}
+              </span>
+              <span className="flex-1 group-hover:text-white truncate">
+                {url}
+              </span>
+            </div>
+          </li>
+        );
+      })}
     </ul>
   );
 }

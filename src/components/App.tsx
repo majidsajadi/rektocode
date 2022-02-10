@@ -4,7 +4,6 @@ import { HAREntry } from "../types";
 import Snippet from "./Snippet";
 import Enteries from "./Enteries";
 
-// TODO: trim request. get only path
 // TODO: focus editor
 // TODO: sort tailwind header
 // TODO: clear snippet on handleClear

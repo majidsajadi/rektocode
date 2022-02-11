@@ -123,7 +123,7 @@ function parse({ request }: HAREntry) {
 }
 
 export default {
-  displayName: "Fetch 2",
+  displayName: "Fetch",
   language: ELanguages.JavaScript,
   parse,
 } as Generator;

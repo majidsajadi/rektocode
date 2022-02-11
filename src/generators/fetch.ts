@@ -1,67 +1,129 @@
+import MIMEType from "whatwg-mimetype";
 import { ELanguages, Generator, HAREntry } from "../types";
 
-// TODO: http version, credential, referrer, cors mode, basic auth, form data
-// TODO: fetch options: indent
-function parse(entry: HAREntry) {
+// TODO: prettify text
+function parseRawData(text: string): string {
+  return `const body = JSON.stringify(${text});`;
+}
+
+// TODO: proper typing
+function parseURLEncoded(
+  params: { name: string; value: string }[],
+  indent: string
+): string {
+  let urlencodedSnippet = "const body = new URLSearchParams();\n";
+
+  urlencodedSnippet += params
+    .map((param) => `body.append('${param.name}', '${param.value}');`)
+    .join(`${indent}\n`);
+
+  return urlencodedSnippet;
+}
+
+// TODO: proper typing
+function parseFormData(
+  params: { name: string; value: string }[],
+  indent: string
+): string {
+  let formDataSnippet = "const body = new FormData();\n";
+
+  formDataSnippet += params
+    .map((param) => `body.append('${param.name}', '${param.value}');`)
+    .join(`${indent}\n`);
+
+  return formDataSnippet;
+}
+
+// TODO: proper typing
+function getPostData(postData: any, indent: string): string {
+  const mimeType = new MIMEType(postData.mimeType).essence;
+
+  switch (mimeType) {
+    case "text/plain":
+    case "application/json":
+      return parseRawData(postData.text);
+    case "application/x-www-form-urlencoded":
+      return parseURLEncoded(postData.params, indent);
+    case "multipart/form-data":
+      return parseFormData(postData.params, indent);
+
+    default:
+      return "";
+  }
+}
+
+// TODO: proper typing
+// TODO: handle forbidden header names: https://fetch.spec.whatwg.org/#forbidden-header-name
+function getHeaders(
+  headers: { name: string; value: string }[],
+  indent: string
+): string {
   const ignoredHeaders = new Set<string>([
     "host",
     "method",
     "path",
     "scheme",
     "version",
-    // https://fetch.spec.whatwg.org/#forbidden-header-name
-    "accept-charset",
-    "accept-encoding",
-    "access-control-request-headers",
-    "access-control-request-method",
-    "connection",
-    "content-length",
-    "cookie",
-    "cookie2",
-    "date",
-    "dnt",
-    "expect",
-    "host",
-    "keep-alive",
-    "origin",
-    "referer",
-    "te",
-    "trailer",
-    "transfer-encoding",
-    "upgrade",
-    "via",
   ]);
 
-  const headerData = new Headers();
-  entry.request.headers.forEach((header) => {
-    const name = header.name.replace(/^:/, "");
+  let headerSnippet = "const headers = new Headers();\n";
 
-    if (!ignoredHeaders.has(name.toLowerCase())) {
-      headerData.append(name, header.value);
-    }
-  });
+  const sanetized = headers.map((header) => ({
+    ...header,
+    name: header.name.replace(/^:/, ""),
+  }));
 
-  const headers: {
-    [name: string]: string;
-  } = {};
+  const filtered = sanetized.filter(
+    ({ name }) => !ignoredHeaders.has(name.toLowerCase())
+  );
 
-  for (const [name, value] of headerData.entries()) {
-    headers[name] = value;
-  }
+  headerSnippet += filtered
+    .map((header) => `headers.append('${header.name}', '${header.value}');`)
+    .join(`${indent}\n`);
 
-  const fetchOptions = {
-    method: entry.request.method,
-    body: entry.request.postData?.text,
-    headers: Object.keys(headers).length ? headers : void 0,
-  };
-
-  const options = JSON.stringify(fetchOptions, null, 2);
-  return `fetch("${entry.request.url}", ${options});`;
+  return headerSnippet;
 }
 
+// TODO: handle cookies?
+// TODO: handle basic authentication?
+// TODO: fetch options: cors mode, credential, redirect, etc.
+// TODO: options: indent, typescript?, es?
+function parse({ request }: HAREntry) {
+  const indent = "  ";
+  let snippet = "";
+
+  if (request.headers.length) {
+    snippet += getHeaders(request.headers, indent);
+    snippet += "\n\n";
+  }
+
+  if (request.postData) {
+    snippet += getPostData(request.postData, indent);
+    snippet += "\n\n";
+  }
+
+  snippet += `const options = {\n`;
+  snippet += `${indent}method: '${request.method}',\n`;
+
+  if (request.headers.length) {
+    snippet += `${indent}headers,\n`;
+  }
+
+  if (request.postData) {
+    snippet += `${indent}body,\n`;
+  }
+
+  snippet += "};\n\n";
+
+  snippet += `const url = '${request.url}'\n\n`;
+
+  snippet += `fetch(url, options);`;
+
+  return snippet;
+}
 
 export default {
-  displayName: "Fetch",
+  displayName: "Fetch 2",
   language: ELanguages.JavaScript,
   parse,
 } as Generator;

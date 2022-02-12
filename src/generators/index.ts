@@ -1,12 +1,12 @@
-import { Generators } from "../types";
-import curl from "./curl";
-import fetch from "./fetch";
-import golang from "./golang";
+import { Generators } from '../types';
+import curl from './curl';
+import fetch from './fetch';
+import golang from './golang';
 
 const generators: Generators = {
   fetch,
   curl,
-  golang,
+  golang
 };
 
 export default generators;

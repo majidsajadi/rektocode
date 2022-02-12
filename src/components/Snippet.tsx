@@ -1,15 +1,15 @@
-import { useMemo, useState } from "react";
-import copy from "copy-to-clipboard";
-import { DuplicateIcon } from "./icons";
-import { Generator, HAREntry } from "../types";
-import generators from "../generators";
-import Editor from "./Editor";
+import React, { useMemo, useState } from 'react';
+import copy from 'copy-to-clipboard';
+import { DuplicateIcon } from './icons';
+import { Generator, HAREntry } from '../types';
+import generators from '../generators';
+import Editor from './Editor';
 
 type CodeProps = {
   entry: HAREntry | null;
 };
 
-const DEFAULT_GENERATOR = "curl";
+const DEFAULT_GENERATOR = 'curl';
 
 export default function Snippet({ entry }: CodeProps) {
   const [selectedGenerator, setSelectedGenerator] = useState<Generator>(
@@ -53,12 +53,12 @@ export default function Snippet({ entry }: CodeProps) {
           </select>
           <DuplicateIcon
             onClick={handleCopy}
-            className={!snippet ? "opacity-50 cursor-not-allowed": ""}
+            className={!snippet ? 'opacity-50 cursor-not-allowed' : ''}
           />
         </div>
       </div>
       <div className="flex-1">
-        <Editor value={snippet} langauge={selectedGenerator.language}/>
+        <Editor value={snippet} langauge={selectedGenerator.language} />
       </div>
     </div>
   );

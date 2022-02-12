@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { SplitPane } from "react-collapse-pane";
-import { HAREntry } from "../types";
-import Snippet from "./Snippet";
-import Enteries from "./Enteries";
+import { useState } from 'react';
+import { SplitPane } from 'react-collapse-pane';
+import { HAREntry } from '../types';
+import Snippet from './Snippet';
+import Enteries from './Enteries';
 
 // TODO: focus editor
 // TODO: sort tailwind header
@@ -12,11 +12,11 @@ function App() {
 
   const resizerOptions = {
     hoverCss: {
-      border: `1px solid var(--border-color)`,
+      border: `1px solid var(--border-color)`
     },
     css: {
-      border: `1px solid var(--border-color)`,
-    },
+      border: `1px solid var(--border-color)`
+    }
   };
 
   return (

@@ -1,13 +1,11 @@
-import classNames from "classnames";
+import React from 'react';
+import classNames from 'classnames';
 
 export function BanIcon({
   className,
   ...rest
-}: React.SVGProps<SVGSVGElement>) {
-  const banIconCLS = classNames(
-    "h-5 w-5 cursor-pointer hover:text-white",
-    className
-  );
+}: { className?: string } & React.SVGProps<SVGSVGElement>) {
+  const banIconCLS = classNames('h-5 w-5 cursor-pointer hover:text-white', className);
 
   return (
     <svg

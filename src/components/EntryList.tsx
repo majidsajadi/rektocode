@@ -1,6 +1,6 @@
-import classNames from "classnames";
-import { v4 as uuidv4 } from "uuid";
-import { HAREntry } from "../types";
+import classNames from 'classnames';
+import { v4 as uuidv4 } from 'uuid';
+import { HAREntry } from '../types';
 
 type EntryListProps = {
   entries: HAREntry[];
@@ -9,25 +9,27 @@ type EntryListProps = {
 
 export default function EntryList({ entries, onClick }: EntryListProps) {
   const getMethodCLS = (status: number) => {
-    const base = "flex-none w-8";
-    let color = "text-success";
+    const base = 'flex-none w-8';
+    let color = 'text-success';
 
     if (status > 400) {
-      color = "text-danger";
+      color = 'text-danger';
     } else if (status >= 300 && status < 400) {
-      color = "text-alert";
+      color = 'text-alert';
     }
 
     return classNames(base, color);
   };
 
   const getURL = (raw: string) => {
-    let { hostname, pathname: url } = new URL(raw);
-    if (url.charAt(0) === "/") {
+    const { hostname, pathname } = new URL(raw);
+    let url = pathname;
+
+    if (url.charAt(0) === '/') {
       url = url.slice(1);
     }
 
-    if (url === "") {
+    if (url === '') {
       url = hostname;
     }
 
@@ -49,12 +51,8 @@ export default function EntryList({ entries, onClick }: EntryListProps) {
               <span className="flex-none w-14 text-secondary group-hover:text-white">
                 {entry.request.method}
               </span>
-              <span className={getMethodCLS(entry.response.status)}>
-                {entry.response.status}
-              </span>
-              <span className="flex-1 group-hover:text-white truncate">
-                {url}
-              </span>
+              <span className={getMethodCLS(entry.response.status)}>{entry.response.status}</span>
+              <span className="flex-1 group-hover:text-white truncate">{url}</span>
             </div>
           </li>
         );

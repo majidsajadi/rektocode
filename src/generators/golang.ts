@@ -1,32 +1,26 @@
-import { ELanguages, Generator, HAREntry } from "../types";
-import { getMimeType } from "./utils";
+import { ELanguages, Generator, HAREntry } from '../types';
+import { getMimeType } from './utils';
 
 function parseRawData(text: string, indent: string): string {
   return `${indent}payload := strings.NewReader(\`${text}\`)`;
 }
 
 // TODO: proper typing
-function parseURLEncoded(
-  params: { name: string; value: string }[],
-  indent: string
-): string {
+function parseURLEncoded(params: { name: string; value: string }[], indent: string): string {
   let urlencodedSnippet = `${indent}data := url.Values{}\n`;
 
   urlencodedSnippet += params
     .map((param) => `${indent}data.Set("${param.name}", "${param.value}")`)
     .join(`\n`);
 
-  urlencodedSnippet += "\n";
+  urlencodedSnippet += '\n';
   urlencodedSnippet += `${indent}payload := strings.NewReader(data.Encode())`;
 
   return urlencodedSnippet;
 }
 
 // TODO: proper typing
-function parseFormData(
-  params: { name: string; value: string }[],
-  indent: string
-): string {
+function parseFormData(params: { name: string; value: string }[], indent: string): string {
   let formDataSnippet = `${indent}payload := &bytes.Buffer{}\n`;
   formDataSnippet += `${indent}writer := multipart.NewWriter(payload)\n`;
 
@@ -52,56 +46,43 @@ function getPostData(postData: any, indent: string): string {
   const mimeType = getMimeType(postData.mimeType);
 
   switch (mimeType) {
-    case "text/plain":
-    case "application/json":
+    case 'text/plain':
+    case 'application/json':
       return parseRawData(postData.text, indent);
-    case "application/x-www-form-urlencoded":
+    case 'application/x-www-form-urlencoded':
       return parseURLEncoded(postData.params, indent);
-    case "multipart/form-data":
+    case 'multipart/form-data':
       return parseFormData(postData.params, indent);
     default:
-      return "";
+      return '';
   }
 }
 
 // TODO: proper typing
-function getHeaders(
-  headers: { name: string; value: string }[],
-  indent: string
-): string {
-  const ignoredHeaders = new Set<string>([
-    "host",
-    "method",
-    "path",
-    "scheme",
-    "version",
-  ]);
+function getHeaders(headers: { name: string; value: string }[], indent: string): string {
+  const ignoredHeaders = new Set<string>(['host', 'method', 'path', 'scheme', 'version']);
 
   const sanetized = headers.map((header) => ({
     ...header,
-    name: header.name.replace(/^:/, ""),
+    name: header.name.replace(/^:/, '')
   }));
 
-  const filtered = sanetized.filter(
-    ({ name }) => !ignoredHeaders.has(name.toLowerCase())
-  );
+  const filtered = sanetized.filter(({ name }) => !ignoredHeaders.has(name.toLowerCase()));
 
   return filtered
-    .map(
-      (header) => `${indent}req.Header.Add("${header.name}", "${header.value}")`
-    )
+    .map((header) => `${indent}req.Header.Add("${header.name}", "${header.value}")`)
     .join(`${indent}\n`);
 }
 
-function getImports( indent: string, postData?: any): string {
+function getImports(indent: string, postData?: any): string {
   const mimeType = postData && getMimeType(postData.mimeType);
 
-  let importSnippet = ""
-  importSnippet += "import (\n";
+  let importSnippet = '';
+  importSnippet += 'import (\n';
   importSnippet += `${indent}"fmt"\n`;
   importSnippet += `${indent}"net/http"\n`;
 
-  if (mimeType === "application/x-www-form-urlencoded") {
+  if (mimeType === 'application/x-www-form-urlencoded') {
     importSnippet += `${indent}"net/url"\n`;
   }
 
@@ -110,29 +91,28 @@ function getImports( indent: string, postData?: any): string {
   }
 
   importSnippet += `${indent}"io/ioutil"\n`;
-  importSnippet += ")\n\n";
+  importSnippet += ')\n\n';
 
-  return importSnippet
+  return importSnippet;
 }
 
 // TODO: maybe handle cookies?
 // TODO: handle basic authentication?
 // TODO: curl options: multi line, multiline char, quote type, long form options
 function parse({ request }: HAREntry) {
-  const indent = "  ";
+  const indent = '  ';
 
-
-  let snippet = "package main\n\n";
+  let snippet = 'package main\n\n';
 
   snippet += getImports(indent, request.postData);
 
-  snippet += "func main() {\n";
+  snippet += 'func main() {\n';
   snippet += `${indent}url := "${request.url}"\n`;
   snippet += `${indent}method := "${request.method}"\n\n`;
 
   if (request.postData) {
     snippet += getPostData(request.postData, indent);
-    snippet += "\n\n";
+    snippet += '\n\n';
     snippet += `${indent}req, err := http.NewRequest(method, url, payload)\n`;
   } else {
     snippet += `${indent}req, err := http.NewRequest(method, url, nil)\n`;
@@ -142,7 +122,7 @@ function parse({ request }: HAREntry) {
 
   if (request.headers.length) {
     snippet += getHeaders(request.headers, indent);
-    snippet += "\n\n";
+    snippet += '\n\n';
   }
 
   snippet += `${indent}client := &http.Client{}\n`;
@@ -158,7 +138,7 @@ function parse({ request }: HAREntry) {
 }
 
 export default {
-  displayName: "Golang",
+  displayName: 'Golang',
   language: ELanguages.Golang,
-  parse,
+  parse
 } as Generator;

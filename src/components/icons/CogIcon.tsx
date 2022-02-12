@@ -1,13 +1,11 @@
-import classNames from "classnames";
+import React from 'react';
+import classNames from 'classnames';
 
 export function CogIcon({
   className,
   ...rest
-}: React.SVGProps<SVGSVGElement>) {
-  const cogIconCLS = classNames(
-    "h-5 w-5 cursor-pointer hover:text-white",
-    className
-  );
+}: { className?: string } & React.SVGProps<SVGSVGElement>) {
+  const cogIconCLS = classNames('h-5 w-5 cursor-pointer hover:text-white', className);
 
   return (
     <svg

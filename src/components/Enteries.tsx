@@ -1,9 +1,9 @@
-import { useEffect, useMemo, useState } from "react";
-import Fuse from "fuse.js";
-import { HAREntry } from "../types";
-import data from "../data";
-import EntryList from "./EntryList";
-import { BanIcon } from "./icons";
+import React, { useEffect, useMemo, useState } from 'react';
+import Fuse from 'fuse.js';
+import { HAREntry } from '../types';
+import data from '../data';
+import EntryList from './EntryList';
+import { BanIcon } from './icons';
 
 type EnteriesProps = {
   onSelect: (entry: HAREntry | null) => void;
@@ -14,7 +14,7 @@ export default function Enteries({ onSelect }: EnteriesProps) {
   const [filter, setFilter] = useState<string>();
 
   const addEntry = (entry: HAREntry) => {
-    if (!["xhr", "fetch"].includes(entry._resourceType as string)) return;
+    if (!['xhr', 'fetch'].includes(entry._resourceType as string)) return;
     setEntries((prev) => [...prev, entry]);
   };
 
@@ -35,7 +35,7 @@ export default function Enteries({ onSelect }: EnteriesProps) {
     }
 
     const options = {
-      keys: ["request.url"],
+      keys: ['request.url']
     };
     const fuse = new Fuse(entries, options);
 
@@ -43,12 +43,14 @@ export default function Enteries({ onSelect }: EnteriesProps) {
   }, [entries, filter]);
 
   useEffect(() => {
-    if (import.meta.env.MODE === "development") {
+    if (import.meta.env.MODE === 'development') {
       data.forEach((i) => addEntry(i as unknown as HAREntry));
     } else {
+      // eslint-disable-next-line no-undef
       chrome.devtools.network.getHAR((harLog) => {
         harLog.entries.forEach(addEntry);
       });
+      // eslint-disable-next-line no-undef
       chrome.devtools.network.onRequestFinished.addListener(addEntry);
     }
   }, []);

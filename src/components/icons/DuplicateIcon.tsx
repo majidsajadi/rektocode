@@ -1,13 +1,11 @@
-import classNames from "classnames";
+import React from 'react';
+import classNames from 'classnames';
 
 export function DuplicateIcon({
   className,
   ...rest
-}: React.SVGProps<SVGSVGElement>) {
-  const duplicateIconCLS = classNames(
-    "h-5 w-5 cursor-pointer hover:text-white",
-    className
-  );
+}: { className?: string } & React.SVGProps<SVGSVGElement>) {
+  const duplicateIconCLS = classNames('h-5 w-5 cursor-pointer hover:text-white', className);
 
   return (
     <svg

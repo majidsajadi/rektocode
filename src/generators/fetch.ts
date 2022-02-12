@@ -1,5 +1,5 @@
-import { ELanguages, Generator, HAREntry } from "../types";
-import { getMimeType } from "./utils";
+import { ELanguages, Generator, HAREntry } from '../types';
+import { getMimeType } from './utils';
 
 // TODO: prettify text
 function parseRawData(text: string): string {
@@ -7,11 +7,8 @@ function parseRawData(text: string): string {
 }
 
 // TODO: proper typing
-function parseURLEncoded(
-  params: { name: string; value: string }[],
-  indent: string
-): string {
-  let urlencodedSnippet = "const body = new URLSearchParams();\n";
+function parseURLEncoded(params: { name: string; value: string }[], indent: string): string {
+  let urlencodedSnippet = 'const body = new URLSearchParams();\n';
 
   urlencodedSnippet += params
     .map((param) => `body.append('${param.name}', '${param.value}');`)
@@ -21,11 +18,8 @@ function parseURLEncoded(
 }
 
 // TODO: proper typing
-function parseFormData(
-  params: { name: string; value: string }[],
-  indent: string
-): string {
-  let formDataSnippet = "const body = new FormData();\n";
+function parseFormData(params: { name: string; value: string }[], indent: string): string {
+  let formDataSnippet = 'const body = new FormData();\n';
 
   formDataSnippet += params
     .map((param) => `body.append('${param.name}', '${param.value}');`)
@@ -39,42 +33,31 @@ function getPostData(postData: any, indent: string): string {
   const mimeType = getMimeType(postData.mimeType);
 
   switch (mimeType) {
-    case "text/plain":
-    case "application/json":
+    case 'text/plain':
+    case 'application/json':
       return parseRawData(postData.text);
-    case "application/x-www-form-urlencoded":
+    case 'application/x-www-form-urlencoded':
       return parseURLEncoded(postData.params, indent);
-    case "multipart/form-data":
+    case 'multipart/form-data':
       return parseFormData(postData.params, indent);
     default:
-      return "";
+      return '';
   }
 }
 
 // TODO: proper typing
 // TODO: handle forbidden header names: https://fetch.spec.whatwg.org/#forbidden-header-name
-function getHeaders(
-  headers: { name: string; value: string }[],
-  indent: string
-): string {
-  const ignoredHeaders = new Set<string>([
-    "host",
-    "method",
-    "path",
-    "scheme",
-    "version",
-  ]);
+function getHeaders(headers: { name: string; value: string }[], indent: string): string {
+  const ignoredHeaders = new Set<string>(['host', 'method', 'path', 'scheme', 'version']);
 
-  let headerSnippet = "const headers = new Headers();\n";
+  let headerSnippet = 'const headers = new Headers();\n';
 
   const sanetized = headers.map((header) => ({
     ...header,
-    name: header.name.replace(/^:/, ""),
+    name: header.name.replace(/^:/, '')
   }));
 
-  const filtered = sanetized.filter(
-    ({ name }) => !ignoredHeaders.has(name.toLowerCase())
-  );
+  const filtered = sanetized.filter(({ name }) => !ignoredHeaders.has(name.toLowerCase()));
 
   headerSnippet += filtered
     .map((header) => `headers.append('${header.name}', '${header.value}');`)
@@ -88,17 +71,17 @@ function getHeaders(
 // TODO: fetch options: cors mode, credential, redirect, etc.
 // TODO: options: indent, typescript?, es?
 function parse({ request }: HAREntry) {
-  const indent = "  ";
-  let snippet = "";
+  const indent = '  ';
+  let snippet = '';
 
   if (request.headers.length) {
     snippet += getHeaders(request.headers, indent);
-    snippet += "\n\n";
+    snippet += '\n\n';
   }
 
   if (request.postData) {
     snippet += getPostData(request.postData, indent);
-    snippet += "\n\n";
+    snippet += '\n\n';
   }
 
   snippet += `const options = {\n`;
@@ -112,7 +95,7 @@ function parse({ request }: HAREntry) {
     snippet += `${indent}body,\n`;
   }
 
-  snippet += "};\n\n";
+  snippet += '};\n\n';
   snippet += `const url = '${request.url}'\n\n`;
   snippet += `fetch(url, options);`;
 
@@ -120,7 +103,7 @@ function parse({ request }: HAREntry) {
 }
 
 export default {
-  displayName: "Fetch",
+  displayName: 'Fetch',
   language: ELanguages.JavaScript,
-  parse,
+  parse
 } as Generator;

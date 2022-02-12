@@ -113,9 +113,7 @@ function parse({ request }: HAREntry) {
   }
 
   snippet += "};\n\n";
-
   snippet += `const url = '${request.url}'\n\n`;
-
   snippet += `fetch(url, options);`;
 
   return snippet;

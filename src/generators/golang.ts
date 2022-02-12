@@ -27,8 +27,8 @@ function parseFormData(
   params: { name: string; value: string }[],
   indent: string
 ): string {
-  let formDataSnippet = `${indent}&bytes.Buffer{}\n`;
-  formDataSnippet = `${indent}writer := multipart.NewWriter(payload)\n`;
+  let formDataSnippet = `${indent}payload := &bytes.Buffer{}\n`;
+  formDataSnippet += `${indent}writer := multipart.NewWriter(payload)\n`;
 
   formDataSnippet += params
     .map((param) => {
@@ -128,7 +128,7 @@ function parse({ request }: HAREntry) {
 
   snippet += "func main() {\n";
   snippet += `${indent}url := "${request.url}"\n`;
-  snippet += `${indent}method := "${request.method}"\n`;
+  snippet += `${indent}method := "${request.method}"\n\n`;
 
   if (request.postData) {
     snippet += getPostData(request.postData, indent);

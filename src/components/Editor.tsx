@@ -5,9 +5,8 @@ import { StreamLanguage } from "@codemirror/stream-parser";
 import { javascript } from "@codemirror/lang-javascript";
 import { shell } from "@codemirror/legacy-modes/mode/shell";
 import { go } from "@codemirror/legacy-modes/mode/go";
-
-import theme from "../utils/theme";
 import { ELanguages } from "../types";
+import theme from "../utils/theme";
 
 type EditorProps = {
   value?: string;

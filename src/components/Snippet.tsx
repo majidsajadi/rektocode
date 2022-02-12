@@ -1,9 +1,9 @@
 import { useMemo, useState } from "react";
+import copy from "copy-to-clipboard";
 import { DuplicateIcon } from "./icons";
 import { Generator, HAREntry } from "../types";
 import generators from "../generators";
 import Editor from "./Editor";
-import copy from "copy-to-clipboard";
 
 type CodeProps = {
   entry: HAREntry | null;

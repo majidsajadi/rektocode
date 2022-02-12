@@ -442,7 +442,7 @@ export default [
     connection: "9153",
     request: {
       method: "PUT",
-      url: "http://localhost:3001/put",
+      url: "http://localhost:3001/put-request",
       httpVersion: "HTTP/1.1",
       headers: [
         {
@@ -584,7 +584,7 @@ export default [
   {
     _initiator: {
       type: "preflight",
-      url: "http://localhost:3001/put",
+      url: "http://localhost:3001/put-request",
     },
     _priority: "High",
     _resourceType: "preflight",
@@ -592,7 +592,7 @@ export default [
     connection: "9153",
     request: {
       method: "OPTIONS",
-      url: "http://localhost:3001/put",
+      url: "http://localhost:3001/put-request",
       httpVersion: "HTTP/1.1",
       headers: [
         {
@@ -872,7 +872,7 @@ export default [
     connection: "9153",
     request: {
       method: "PATCH",
-      url: "http://localhost:3001/patch",
+      url: "http://localhost:3001/patch-request",
       httpVersion: "HTTP/1.1",
       headers: [
         {
@@ -1010,7 +1010,7 @@ export default [
   {
     _initiator: {
       type: "preflight",
-      url: "http://localhost:3001/patch",
+      url: "http://localhost:3001/patch-request",
     },
     _priority: "High",
     _resourceType: "preflight",
@@ -1018,7 +1018,7 @@ export default [
     connection: "9153",
     request: {
       method: "OPTIONS",
-      url: "http://localhost:3001/patch",
+      url: "http://localhost:3001/patch-request",
       httpVersion: "HTTP/1.1",
       headers: [
         {
@@ -1298,7 +1298,7 @@ export default [
     connection: "9191",
     request: {
       method: "DELETE",
-      url: "http://localhost:3001/delete",
+      url: "http://localhost:3001/delete-request",
       httpVersion: "HTTP/1.1",
       headers: [
         {
@@ -1436,7 +1436,7 @@ export default [
   {
     _initiator: {
       type: "preflight",
-      url: "http://localhost:3001/delete",
+      url: "http://localhost:3001/delete-request",
     },
     _priority: "High",
     _resourceType: "preflight",
@@ -1444,7 +1444,7 @@ export default [
     connection: "9191",
     request: {
       method: "OPTIONS",
-      url: "http://localhost:3001/delete",
+      url: "http://localhost:3001/delete-request",
       httpVersion: "HTTP/1.1",
       headers: [
         {
@@ -1724,7 +1724,7 @@ export default [
     connection: "9191",
     request: {
       method: "GET",
-      url: "http://localhost:3001/custom-headers",
+      url: "http://localhost:3001/custom-headers-request",
       httpVersion: "HTTP/1.1",
       headers: [
         {
@@ -1866,7 +1866,7 @@ export default [
   {
     _initiator: {
       type: "preflight",
-      url: "http://localhost:3001/custom-headers",
+      url: "http://localhost:3001/custom-headers-request",
     },
     _priority: "High",
     _resourceType: "preflight",
@@ -1874,7 +1874,7 @@ export default [
     connection: "9191",
     request: {
       method: "OPTIONS",
-      url: "http://localhost:3001/custom-headers",
+      url: "http://localhost:3001/custom-headers-request",
       httpVersion: "HTTP/1.1",
       headers: [
         {
@@ -2443,7 +2443,7 @@ export default [
     connection: "9224",
     request: {
       method: "GET",
-      url: "http://localhost:3000/invalid-url",
+      url: "http://localhost:3000/invalid-url-error",
       httpVersion: "HTTP/1.1",
       headers: [
         {
@@ -3014,7 +3014,7 @@ export default [
     connection: "9191",
     request: {
       method: "GET",
-      url: "http://localhost:3001/not-found",
+      url: "http://localhost:3001/not-found-error",
       httpVersion: "HTTP/1.1",
       headers: [
         {
@@ -3307,7 +3307,7 @@ export default [
     connection: "9191",
     request: {
       method: "POST",
-      url: "http://localhost:3001/json",
+      url: "http://localhost:3001/post-json-request",
       httpVersion: "HTTP/1.1",
       headers: [
         {
@@ -3457,7 +3457,7 @@ export default [
   {
     _initiator: {
       type: "preflight",
-      url: "http://localhost:3001/json",
+      url: "http://localhost:3001/post-json-request",
     },
     _priority: "High",
     _resourceType: "preflight",
@@ -3465,7 +3465,7 @@ export default [
     connection: "9191",
     request: {
       method: "OPTIONS",
-      url: "http://localhost:3001/json",
+      url: "http://localhost:3001/post-json-request",
       httpVersion: "HTTP/1.1",
       headers: [
         {
@@ -3753,7 +3753,7 @@ export default [
     connection: "9191",
     request: {
       method: "POST",
-      url: "http://localhost:3001/json",
+      url: "http://localhost:3001/post-text-request",
       httpVersion: "HTTP/1.1",
       headers: [
         {
@@ -3898,325 +3898,6 @@ export default [
       wait: 1.9260000024847685,
       receive: 0.40499999886378646,
       _blocked_queueing: 3.316000002087094,
-    },
-  },
-  {
-    _initiator: {
-      type: "script",
-      stack: {
-        callFrames: [
-          {
-            functionName: "handleUrlEncoded",
-            scriptId: "21",
-            url: "http://localhost:3000/src/App.jsx",
-            lineNumber: 131,
-            columnNumber: 4,
-          },
-          {
-            functionName: "callCallback",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 5255,
-            columnNumber: 13,
-          },
-          {
-            functionName: "invokeGuardedCallbackDev",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 5304,
-            columnNumber: 15,
-          },
-          {
-            functionName: "invokeGuardedCallback",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 5366,
-            columnNumber: 30,
-          },
-          {
-            functionName: "invokeGuardedCallbackAndCatchFirstError",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 5380,
-            columnNumber: 24,
-          },
-          {
-            functionName: "executeDispatch",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 9553,
-            columnNumber: 2,
-          },
-          {
-            functionName: "processDispatchQueueItemsInOrder",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 9585,
-            columnNumber: 6,
-          },
-          {
-            functionName: "processDispatchQueue",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 9598,
-            columnNumber: 4,
-          },
-          {
-            functionName: "dispatchEventsForPlugins",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 9609,
-            columnNumber: 2,
-          },
-          {
-            functionName: "",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 9817,
-            columnNumber: 11,
-          },
-          {
-            functionName: "batchedEventUpdates$1",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 23692,
-            columnNumber: 11,
-          },
-          {
-            functionName: "batchedEventUpdates",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 5055,
-            columnNumber: 11,
-          },
-          {
-            functionName: "dispatchEventForPluginEventSystem",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 9816,
-            columnNumber: 2,
-          },
-          {
-            functionName: "attemptToDispatchEvent",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 7315,
-            columnNumber: 2,
-          },
-          {
-            functionName: "dispatchEvent",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 7234,
-            columnNumber: 18,
-          },
-          {
-            functionName: "unstable_runWithPriority",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 462,
-            columnNumber: 11,
-          },
-          {
-            functionName: "runWithPriority$1",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 12583,
-            columnNumber: 9,
-          },
-          {
-            functionName: "discreteUpdates$1",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 23709,
-            columnNumber: 13,
-          },
-          {
-            functionName: "discreteUpdates",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 5066,
-            columnNumber: 11,
-          },
-          {
-            functionName: "dispatchDiscreteEvent",
-            scriptId: "19",
-            url: "http://localhost:3000/@modules/react-dom.js",
-            lineNumber: 7199,
-            columnNumber: 2,
-          },
-        ],
-      },
-    },
-    _priority: "High",
-    _resourceType: "fetch",
-    cache: {},
-    connection: "9191",
-    request: {
-      method: "POST",
-      url: "http://localhost:3001/json",
-      httpVersion: "HTTP/1.1",
-      headers: [
-        {
-          name: "Host",
-          value: "localhost:3001",
-        },
-        {
-          name: "Connection",
-          value: "keep-alive",
-        },
-        {
-          name: "Content-Length",
-          value: "42",
-        },
-        {
-          name: "Pragma",
-          value: "no-cache",
-        },
-        {
-          name: "Cache-Control",
-          value: "no-cache",
-        },
-        {
-          name: "sec-ch-ua",
-          value:
-            '" Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
-        },
-        {
-          name: "sec-ch-ua-mobile",
-          value: "?0",
-        },
-        {
-          name: "User-Agent",
-          value:
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36",
-        },
-        {
-          name: "sec-ch-ua-platform",
-          value: '"macOS"',
-        },
-        {
-          name: "content-type",
-          value: "application/x-www-form-urlencoded",
-        },
-        {
-          name: "Accept",
-          value: "*/*",
-        },
-        {
-          name: "Origin",
-          value: "http://localhost:3000",
-        },
-        {
-          name: "Sec-Fetch-Site",
-          value: "same-site",
-        },
-        {
-          name: "Sec-Fetch-Mode",
-          value: "cors",
-        },
-        {
-          name: "Sec-Fetch-Dest",
-          value: "empty",
-        },
-        {
-          name: "Referer",
-          value: "http://localhost:3000/",
-        },
-        {
-          name: "Accept-Encoding",
-          value: "gzip, deflate, br",
-        },
-        {
-          name: "Accept-Language",
-          value: "en-US,en;q=0.9,fa;q=0.8,zh-CN;q=0.7,zh;q=0.6,ar;q=0.5",
-        },
-      ],
-      queryString: [],
-      cookies: [],
-      headersSize: 698,
-      bodySize: 42,
-      postData: {
-        mimeType: "application/x-www-form-urlencoded",
-        text: "name=majid&last=sajadi&age=28&single=false",
-        params: [
-          {
-            name: "name",
-            value: "majid",
-          },
-          {
-            name: "last",
-            value: "sajadi",
-          },
-          {
-            name: "age",
-            value: "28",
-          },
-          {
-            name: "single",
-            value: "false",
-          },
-        ],
-      },
-    },
-    response: {
-      status: 200,
-      statusText: "OK",
-      httpVersion: "HTTP/1.1",
-      headers: [
-        {
-          name: "X-Powered-By",
-          value: "Express",
-        },
-        {
-          name: "Access-Control-Allow-Origin",
-          value: "*",
-        },
-        {
-          name: "Content-Type",
-          value: "application/json; charset=utf-8",
-        },
-        {
-          name: "Content-Length",
-          value: "60",
-        },
-        {
-          name: "ETag",
-          value: 'W/"3c-IuVqX1Pvo9R43zSJ9fSR09qGeiw"',
-        },
-        {
-          name: "Date",
-          value: "Thu, 10 Feb 2022 18:14:27 GMT",
-        },
-        {
-          name: "Connection",
-          value: "keep-alive",
-        },
-      ],
-      cookies: [],
-      content: {
-        size: 60,
-        mimeType: "application/json",
-        compression: 0,
-      },
-      redirectURL: "",
-      headersSize: 244,
-      bodySize: 60,
-      _transferSize: 304,
-      _error: null,
-    },
-    serverIPAddress: "[::1]",
-    startedDateTime: "2022-02-10T18:14:27.382Z",
-    time: 7.896000002801884,
-    timings: {
-      blocked: 2.7460000006100165,
-      dns: -1,
-      ssl: -1,
-      connect: -1,
-      send: 0.26399999999999996,
-      wait: 4.200000002786982,
-      receive: 0.6859999994048849,
-      _blocked_queueing: 2.2800000006100163,
     },
   },
   {
@@ -4373,7 +4054,7 @@ export default [
     connection: "9191",
     request: {
       method: "POST",
-      url: "http://localhost:3001/json",
+      url: "http://localhost:3001/form-urlencoded-request",
       httpVersion: "HTTP/1.1",
       headers: [
         {
@@ -4692,7 +4373,7 @@ export default [
     connection: "9191",
     request: {
       method: "POST",
-      url: "http://localhost:3001/form",
+      url: "http://localhost:3001/form-data-request",
       httpVersion: "HTTP/1.1",
       headers: [
         {

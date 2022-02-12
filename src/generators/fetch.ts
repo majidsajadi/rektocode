@@ -1,9 +1,5 @@
-import MIMEType from "whatwg-mimetype";
 import { ELanguages, Generator, HAREntry } from "../types";
-
-function getMimeType(mimeType: string): string {
-  return new MIMEType(mimeType).essence;
-}
+import { getMimeType } from "./utils";
 
 // TODO: prettify text
 function parseRawData(text: string): string {
@@ -50,7 +46,6 @@ function getPostData(postData: any, indent: string): string {
       return parseURLEncoded(postData.params, indent);
     case "multipart/form-data":
       return parseFormData(postData.params, indent);
-
     default:
       return "";
   }

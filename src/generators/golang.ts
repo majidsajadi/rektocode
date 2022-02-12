@@ -1,9 +1,5 @@
-import MIMEType from "whatwg-mimetype";
 import { ELanguages, Generator, HAREntry } from "../types";
-
-function getMimeType(mimeType: string): string {
-  return new MIMEType(mimeType).essence;
-}
+import { getMimeType } from "./utils";
 
 function parseRawData(text: string, indent: string): string {
   return `${indent}payload := strings.NewReader(\`${text}\`)`;
@@ -97,30 +93,38 @@ function getHeaders(
     .join(`${indent}\n`);
 }
 
+function getImports( indent: string, postData?: any): string {
+  const mimeType = postData && getMimeType(postData.mimeType);
+
+  let importSnippet = ""
+  importSnippet += "import (\n";
+  importSnippet += `${indent}"fmt"\n`;
+  importSnippet += `${indent}"net/http"\n`;
+
+  if (mimeType === "application/x-www-form-urlencoded") {
+    importSnippet += `${indent}"net/url"\n`;
+  }
+
+  if (postData) {
+    importSnippet += `${indent}"strings"\n`;
+  }
+
+  importSnippet += `${indent}"io/ioutil"\n`;
+  importSnippet += ")\n\n";
+
+  return importSnippet
+}
+
 // TODO: maybe handle cookies?
 // TODO: handle basic authentication?
 // TODO: curl options: multi line, multiline char, quote type, long form options
 function parse({ request }: HAREntry) {
   const indent = "  ";
 
-  const mimeType = request.postData && getMimeType(request.postData.mimeType);
 
   let snippet = "package main\n\n";
 
-  snippet += "import (\n";
-  snippet += `${indent}"fmt"\n`;
-  snippet += `${indent}"net/http"\n`;
-
-  if (mimeType === "application/x-www-form-urlencoded") {
-    snippet += `${indent}"net/url"\n`;
-  }
-
-  if (request.postData) {
-    snippet += `${indent}"strings"\n`;
-  }
-
-  snippet += `${indent}"io/ioutil"\n`;
-  snippet += ")\n\n";
+  snippet += getImports(indent, request.postData);
 
   snippet += "func main() {\n";
   snippet += `${indent}url := "${request.url}"\n`;

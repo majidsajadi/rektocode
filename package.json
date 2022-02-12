@@ -1,6 +1,25 @@
 {
   "name": "rektocode",
-  "version": "0.0.0",
+  "description": "Chrome extension to generate code from HTTP requests",
+  "keywords": [
+    "rektocode",
+    "chrome",
+    "extension",
+    "request",
+    "codegen",
+    "generator",
+    "devtools",
+    "http"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/majidsajadi/rektocode"
+  },
+  "homepage": "https://github.com/majidsajadi/rektocode",
+  "author": "Majid Sajadi <majidsajadi93@gmail.com> (https://github.com/majidsaiadi)",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

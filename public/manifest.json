@@ -1,7 +1,7 @@
 {
   "name": "Rektocode",
-  "description": "",
-  "version": "0.1",
+  "description": "Chrome extension to generate code from HTTP requests",
+  "version": "0.1.0",
   "manifest_version": 3,
   "devtools_page": "devtool.html"
 }

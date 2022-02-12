@@ -1,67 +1,156 @@
+import MIMEType from "whatwg-mimetype";
 import { ELanguages, Generator, HAREntry } from "../types";
-import MIMEType from 'whatwg-mimetype';
 
-// TODO: http version, credential, referrer, cors mode, basic auth, form data
-function parse(entry: HAREntry) {
+function getMimeType(mimeType: string): string {
+  return new MIMEType(mimeType).essence;
+}
 
-  if (entry.request.postData?.mimeType) {
-    const mimeType = new MIMEType(entry.request.postData?.mimeType);
-    return JSON.stringify({ type: mimeType.subtype, sub: mimeType.subtype })
+function parseRawData(text: string, indent: string): string {
+  return `${indent}payload := strings.NewReader(\`${text}\`)`;
+}
 
+// TODO: proper typing
+function parseURLEncoded(
+  params: { name: string; value: string }[],
+  indent: string
+): string {
+  let urlencodedSnippet = `${indent}data := url.Values{}\n`;
+
+  urlencodedSnippet += params
+    .map((param) => `${indent}data.Set("${param.name}", "${param.value}")`)
+    .join(`\n`);
+
+  urlencodedSnippet += "\n";
+  urlencodedSnippet += `${indent}payload := strings.NewReader(data.Encode())`;
+
+  return urlencodedSnippet;
+}
+
+// TODO: proper typing
+function parseFormData(
+  params: { name: string; value: string }[],
+  indent: string
+): string {
+  let formDataSnippet = `${indent}&bytes.Buffer{}\n`;
+  formDataSnippet = `${indent}writer := multipart.NewWriter(payload)\n`;
+
+  formDataSnippet += params
+    .map((param) => {
+      const name = encodeURIComponent(param.name);
+      const value = encodeURIComponent(param.value);
+      return `${indent}_ = writer.WriteField("${name}", "${value}")`;
+    })
+    .join(`${indent}\n`);
+
+  formDataSnippet += `${indent}err := writer.Close()`;
+  formDataSnippet += `${indent}if err != nil {`;
+  formDataSnippet += `${indent}${indent}fmt.Println(err)`;
+  formDataSnippet += `${indent}${indent}return`;
+  formDataSnippet += `${indent}}`;
+
+  return formDataSnippet;
+}
+
+// TODO: proper typing
+function getPostData(postData: any, indent: string): string {
+  const mimeType = getMimeType(postData.mimeType);
+
+  switch (mimeType) {
+    case "text/plain":
+    case "application/json":
+      return parseRawData(postData.text, indent);
+    case "application/x-www-form-urlencoded":
+      return parseURLEncoded(postData.params, indent);
+    case "multipart/form-data":
+      return parseFormData(postData.params, indent);
+    default:
+      return "";
+  }
+}
+
+// TODO: proper typing
+function getHeaders(
+  headers: { name: string; value: string }[],
+  indent: string
+): string {
+  const ignoredHeaders = new Set<string>([
+    "host",
+    "method",
+    "path",
+    "scheme",
+    "version",
+  ]);
+
+  const sanetized = headers.map((header) => ({
+    ...header,
+    name: header.name.replace(/^:/, ""),
+  }));
+
+  const filtered = sanetized.filter(
+    ({ name }) => !ignoredHeaders.has(name.toLowerCase())
+  );
+
+  return filtered
+    .map(
+      (header) => `${indent}req.Header.Add("${header.name}", "${header.value}")`
+    )
+    .join(`${indent}\n`);
+}
+
+// TODO: maybe handle cookies?
+// TODO: handle basic authentication?
+// TODO: curl options: multi line, multiline char, quote type, long form options
+function parse({ request }: HAREntry) {
+  const indent = "  ";
+
+  const mimeType = request.postData && getMimeType(request.postData.mimeType);
+
+  let snippet = "package main\n\n";
+
+  snippet += "import (\n";
+  snippet += `${indent}"fmt"\n`;
+  snippet += `${indent}"net/http"\n`;
+
+  if (mimeType === "application/x-www-form-urlencoded") {
+    snippet += `${indent}"net/url"\n`;
   }
 
-  return JSON.stringify(entry)
-  // const ignoredHeaders = new Set<string>([
-  //   "host",
-  //   "method",
-  //   "path",
-  //   "scheme",
-  //   "version",
-  // ]);
+  if (request.postData) {
+    snippet += `${indent}"strings"\n`;
+  }
 
-  // let snippet = "package main\n\n";
-  // snippet += 'import (\n\t"fmt"\n\t"net/http"\n\t"io/ioutil"\n';
-  // if (entry.request.postData?.text) {
-  //   snippet += '\t"strings"\n';
-  // }
-  // snippet += ")\n\n";
-  // snippet += `func main() {\n\turl := "${entry.request.url}"\n`;
-  // snippet += `\tmethod := "${entry.request.method}"\n\n`;
-  // snippet += "\tclient := &http.Client{}\n\n";
+  snippet += `${indent}"io/ioutil"\n`;
+  snippet += ")\n\n";
 
-  // if (entry.request.postData?.text) {
-  //   snippet += `\tdata := strings.NewReader(\`${JSON.parse(entry.request.postData.text)}\`)\n`;
-  //   snippet += "\treq, err := http.NewRequest(method, url, data)\n";
-  // } else {
-  //   snippet += "\treq, err := http.NewRequest(method, url, nil)\n";
-  // }
+  snippet += "func main() {\n";
+  snippet += `${indent}url := "${request.url}"\n`;
+  snippet += `${indent}method := "${request.method}"\n`;
 
-  // snippet += `\tif err != nil {\n\t\tfmt.Println(err)\n`;
-  // snippet += `\t\treturn\n\t}\n\n`;
+  if (request.postData) {
+    snippet += getPostData(request.postData, indent);
+    snippet += "\n\n";
+    snippet += `${indent}req, err := http.NewRequest(method, url, payload)\n`;
+  } else {
+    snippet += `${indent}req, err := http.NewRequest(method, url, nil)\n`;
+  }
+  snippet += `${indent}if err != nil {\n${indent}${indent}fmt.Println(err)\n`;
+  snippet += `${indent}${indent}return\n${indent}}\n\n`;
 
-  // entry.request.headers.forEach((header) => {
-  //   const name = header.name.replace(/^:/, "");
+  if (request.headers.length) {
+    snippet += getHeaders(request.headers, indent);
+    snippet += "\n\n";
+  }
 
-  //   if (!ignoredHeaders.has(name.toLowerCase())) {
-  //     snippet += `\treq.Header.Add("${name}", "${encodeURIComponent(
-  //       header.value
-  //     )}")\n`;
-  //   }
-  // });
+  snippet += `${indent}client := &http.Client{}\n`;
+  snippet += `${indent}res, err := client.Do(req)\n`;
+  snippet += `${indent}if err != nil {\n${indent}${indent}fmt.Println(err)\n`;
+  snippet += `${indent}${indent}return\n${indent}}\n`;
+  snippet += `${indent}defer res.Body.Close()\n\n${indent}body, err := ioutil.ReadAll(res.Body)\n`;
+  snippet += `${indent}if err != nil {\n${indent}${indent}fmt.Println(err)\n`;
+  snippet += `${indent}${indent}return\n${indent}}\n\n`;
+  snippet += `${indent}fmt.Println(string(body))\n}`;
 
-  // if (entry.request.headers.length) {
-  //   snippet += "\n";
-  // }
-
-  // snippet += `\tres, err := client.Do(req)\n`;
-  // snippet += `\tif err != nil {\n\t\tfmt.Println(err)\n`;
-  // snippet += `\t\treturn\n\t}\n`;
-  // snippet += `\tdefer res.Body.Close()\n\n\tbody, err := ioutil.ReadAll(res.Body)\n`;
-  // snippet += `\tif err != nil {\n\t\tfmt.Println(err)\n`;
-  // snippet += `\t\treturn\n\t}\n`;
-  // snippet += `\tfmt.Println(string(body))\n}`;
-
-  // return snippet;
+  return snippet;
 }
 
 export default {

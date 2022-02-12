@@ -1,6 +1,10 @@
 import MIMEType from "whatwg-mimetype";
 import { ELanguages, Generator, HAREntry } from "../types";
 
+function getMimeType(mimeType: string): string {
+  return new MIMEType(mimeType).essence;
+}
+
 // TODO: prettify text
 function parseRawData(text: string): string {
   return `const body = JSON.stringify(${text});`;
@@ -36,7 +40,7 @@ function parseFormData(
 
 // TODO: proper typing
 function getPostData(postData: any, indent: string): string {
-  const mimeType = new MIMEType(postData.mimeType).essence;
+  const mimeType = getMimeType(postData.mimeType);
 
   switch (mimeType) {
     case "text/plain":

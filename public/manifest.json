@@ -4,5 +4,5 @@
   "version": "0.1.0",
   "manifest_version": 3,
   "devtools_page": "devtool.html",
-  "icons": { "256": "icon.png" }
+  "icons": { "128": "icon128.png", "48": "icon48.png", "16": "icon16.png" }
 }

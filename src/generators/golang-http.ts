@@ -138,7 +138,7 @@ function parse({ request }: HAREntry) {
 }
 
 export default {
-  displayName: 'Golang',
+  displayName: 'Golang-HTTP',
   language: ELanguages.Golang,
   parse
 } as Generator;

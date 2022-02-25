@@ -3,7 +3,8 @@ export type HAREntry = chrome.devtools.network.HAREntry;
 export enum ELanguages {
   JavaScript = 'javascript',
   Shell = 'shell',
-  Golang = 'golang'
+  Golang = 'golang',
+  Python = 'python'
 }
 
 export type Generator = {

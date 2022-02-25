@@ -3,6 +3,7 @@ import CodeMirror, { EditorView } from '@uiw/react-codemirror';
 import { oneDark } from '@codemirror/theme-one-dark';
 import { StreamLanguage } from '@codemirror/stream-parser';
 import { javascript } from '@codemirror/lang-javascript';
+import { python } from '@codemirror/lang-python';
 import { shell } from '@codemirror/legacy-modes/mode/shell';
 import { go } from '@codemirror/legacy-modes/mode/go';
 import { ELanguages } from '../types';
@@ -19,10 +20,13 @@ export default function Editor({ value, langauge }: EditorProps) {
     switch (langauge) {
       case ELanguages.JavaScript:
         return [...defaultExtensions, javascript()];
+      case ELanguages.Python:
+        return [...defaultExtensions, python()];
       case ELanguages.Shell:
         return [...defaultExtensions, StreamLanguage.define(shell)];
       case ELanguages.Golang:
         return [...defaultExtensions, StreamLanguage.define(go)];
+
       default:
         return defaultExtensions;
     }

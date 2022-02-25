@@ -1,11 +1,8 @@
 import { ELanguages, Generator, HAREntry } from '../types';
 import { getMimeType } from './utils';
 
-function pythonify (json: string) {
-  return json
-    .replaceAll('true', 'True')
-    .replaceAll('false', 'False')
-    .replaceAll('null', 'None');
+function pythonify(json: string) {
+  return json.replaceAll('true', 'True').replaceAll('false', 'False').replaceAll('null', 'None');
 }
 
 // TODO: proper typing
@@ -29,9 +26,9 @@ function getPostData(postData: any, indent: string): string {
   switch (mimeType) {
     case 'text/plain':
     case 'application/x-www-form-urlencoded':
-      return `payload = '${postData.text}'`
+      return `payload = '${postData.text}'`;
     case 'application/json':
-      return `payload = json.dumps(${pythonify(postData.text)})`
+      return `payload = json.dumps(${pythonify(postData.text)})`;
     case 'multipart/form-data':
       return parseFormData(postData.params, indent);
     default:
@@ -73,10 +70,10 @@ function parse({ request }: HAREntry) {
     snippet += 'import json\n';
   }
 
-  snippet += '\n'
+  snippet += '\n';
 
-  snippet += `url = '${request.url}'\n`
-  snippet += `method = '${request.method}'\n\n`
+  snippet += `url = '${request.url}'\n`;
+  snippet += `method = '${request.method}'\n\n`;
 
   if (request.headers.length) {
     snippet += getHeaders(request.headers, indent);
@@ -91,10 +88,10 @@ function parse({ request }: HAREntry) {
   snippet += `response = requests.request(method, url, headers=headers`;
 
   if (request.postData) {
-    snippet += ', data=payload'
+    snippet += ', data=payload';
   }
 
-  snippet += ")"
+  snippet += ')';
 
   return snippet;
 }

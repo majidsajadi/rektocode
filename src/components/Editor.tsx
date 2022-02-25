@@ -26,7 +26,7 @@ export default function Editor({ value, langauge }: EditorProps) {
         return [...defaultExtensions, StreamLanguage.define(shell)];
       case ELanguages.Golang:
         return [...defaultExtensions, StreamLanguage.define(go)];
-      
+
       default:
         return defaultExtensions;
     }
